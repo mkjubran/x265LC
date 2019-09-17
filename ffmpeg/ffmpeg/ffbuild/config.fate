@@ -1,1 +1,0 @@
-config:x86:x86_64:generic:linux:gcc 5.4.0 (Ubuntu 5.4.0-6ubuntu1~16.04.11) 20160609:--prefix=/root/ffmpeg_build --pkg-config-flags=--static --extra-cflags=-I/root/ffmpeg_build/include --extra-ldflags=-L/root/ffmpeg_build/lib --extra-libs='-lpthread -lm' --bindir=/root/bin --enable-gpl --enable-libx265

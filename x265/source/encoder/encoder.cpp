@@ -2218,7 +2218,7 @@ void Encoder::finishFrameStats(Frame* curFrame, FrameEncoder *curEncoder, x265_f
     Slice* slice = curEncData.m_slice;
 
     //===== add bits, psnr and ssim =====
-    printf("%10d\n", bits ); //jubran
+    //x265_log(m_param, X265_LOG_INFO, "bits: %d\n", bits); //jubran
     m_analyzeAll.addBits(bits);
     m_analyzeAll.addQP(curEncData.m_avgQpAq);
 
@@ -2302,6 +2302,12 @@ void Encoder::finishFrameStats(Frame* curFrame, FrameEncoder *curEncoder, x265_f
                     frameStats->list1POC[ref] = ref < slice->m_numRefIdx[1] ? slice->m_refPOCList[1][ref] - slice->m_lastIDR : -1;
             }
         }
+
+
+       x265_log(m_param, X265_LOG_INFO, "POC: %d, bits: %d\n", frameStats->poc,frameStats->bits); //jubran
+
+
+
 #define ELAPSED_MSEC(start, end) (((double)(end) - (start)) / 1000)
         if (m_param->csvLogLevel >= 2)
         {
