@@ -8,18 +8,20 @@ This repository contains our public tools for ....
 
 ## Prerequisites
 
-In order to compile and run the tools provided in this repository you will need:
-1. Python 2.7 
-2. ffmpeg (version 2.8.15 or higher)
+In order to compile and run the tools provided in this repository you will need Python 2.7
 
-## To produce data for training the network
-To extract the informartion needed to prepare the training data, run an ffmpeg comand with the libx265 (modified) similar to:
+## Compilation & Installation
+
+Use the instruction provided in http://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu to compile and install libx264 and ffmpeg. To compile libx265, use the modified source files provided in this reposetery.
+
+## Neural MNetwork Training Data
+To extract the informartion needed to prepare the training data, run an ffmpeg comand with the modified libx265 similar to:
 
 ```
-../ffmpeg/ffmpeg -y -i ../../vid/park_joy_640480.mp4 -vcodec libx265 -crf 12 -pass 1 -an -f mp4 /dev/null
+./ffmpeg -y -i ../../vid/park_joy_640480.mp4 -vcodec libx265 -crf 12 -pass 1 -an -f mp4 /dev/null
 ```
 
-Noew, to produce the necessary data to train the network run:
+Now, to produce the necessary data to train the network run:
 
 ```
 python python ./Produce_x265_InfoPerFrame.py --file_video=../../vid/park_joy_640480.mp4 --file_perframe=x265LC_InfoPerFrame.txt --path=../x265LC_Results
