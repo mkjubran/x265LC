@@ -20,9 +20,9 @@ To extract the information needed to prepare the training data, run an ffmpeg co
 ```
 ./ffmpeg -y -i ../../vid/park_joy_640480.mp4 -vcodec libx265 -crf 12 -pass 1 -an -f mp4 /dev/null
 ```
+This will produce a text file contains rate, type, and Reference Picture Set (RPS) per video frame.
 
 Now, to produce the necessary data to train the neural network run:
-
 ```
 python python ./Produce_x265_InfoPerFrame.py --file_video=../../vid/park_joy_640480.mp4 --file_perframe=x265LC_InfoPerFrame.txt --path=../x265LC_Results
 ```
