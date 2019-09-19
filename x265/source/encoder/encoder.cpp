@@ -2303,9 +2303,38 @@ void Encoder::finishFrameStats(Frame* curFrame, FrameEncoder *curEncoder, x265_f
             }
         }
 
+       // start editing jubran
+       //x265_log(m_param, X265_LOG_INFO, "POC: %d, bits: %d\n", frameStats->poc,frameStats->bits);
+       FILE * pFile;
+       if (frameStats->poc>0)
+         {
+         pFile = fopen ("x265LC_InfoPerFrame.txt","a");
+         }
+       else
+         {
+         pFile = fopen ("x265LC_InfoPerFrame.txt","w");
+         }
+       //fprintf (pFile, "Name");
+       char c = (slice->isIntra() ? 'I' : slice->isInterP() ? 'P' : 'B');
+       fprintf(pFile,"%4d %c %10d", frameStats->poc,c,frameStats->bits );
 
-       x265_log(m_param, X265_LOG_INFO, "POC: %d, bits: %d\n", frameStats->poc,frameStats->bits); //jubran
+       fprintf(pFile," [L0 ");
+       for (int ref = 0; ref < 16; ref++)
+         {
+         fprintf (pFile, "%d ", frameStats->list0POC[ref]);
+         }
+       fprintf(pFile,"L0]");
+      
+       fprintf(pFile," [L1 ");
+       for (int ref = 0; ref < 16; ref++)
+         {
+         fprintf (pFile, "%d ", frameStats->list1POC[ref]);
+         }
+       fprintf(pFile,"L1]");
 
+       fprintf(pFile,"\n");
+       fclose (pFile);
+  // end of edit
 
 
 #define ELAPSED_MSEC(start, end) (((double)(end) - (start)) / 1000)
