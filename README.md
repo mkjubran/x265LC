@@ -24,7 +24,7 @@ This will produce a text file contains rate, type, and Reference Picture Set (RP
 
 Now, to produce the necessary data to train the neural network run:
 ```
-python python ./Produce_x265_InfoPerFrame.py --file_video=../../vid/park_joy_640480.mp4 --file_perframe=x265LC_InfoPerFrame.txt --path=../x265LC_Results
+python ./Produce_x265_InfoPerFrame.py --file_video=../../vid/park_joy_640480.mp4 --file_perframe=x265LC_InfoPerFrame.txt --path=../x265LC_Results
 ```
 
 Option | Description [default]
