@@ -16,7 +16,7 @@ In order to compile and run the tools provided in this repository you will need:
 To extract the informartion needed to prepare the training data, run an ffmpeg comand with the libx265 (modified) similar to:
 
 ```
-llll
+../ffmpeg/ffmpeg -y -i ../../vid/park_joy_640480.mp4 -vcodec libx265 -crf 12 -pass 1 -an -f mp4 /dev/null
 ```
 
 Noew, to produce the necessary data to train the network run:
