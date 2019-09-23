@@ -42,14 +42,14 @@ def produce_training_data(finfo):
        lines = fi.readlines()
     Bits=[]
     for cnt in range(len(lines)):
-       line = re.sub(' +', ' ', lines[cnt]).split(' ')
-       POC = line[1]
-       POCtype = line[2]
+       line = re.sub(' +', ' ', lines[cnt]).lstrip().split(' ')
+       POC = line[0]
+       POCtype = line[1]
        #print(POCtype);
        #pdb.set_trace();
-       Frame = str(int(line[1])+1) ## Frame=POC+1
+       Frame = str(int(line[0])+1) ## Frame=POC+1
        osout = call('cp -rf {} {}'.format(video_path+'/POC/'+Frame+'.jpg',video_path+'/x265LCPOC/P'+POC+'.jpg'))
-       Bits.append(int(line[3]))
+       Bits.append(int(line[2]))
        L0 = re.sub(' +', ' ', lines[cnt]).split('L0')[1].split(' ')[1:-1]
        L1 = re.sub(' +', ' ', lines[cnt]).split('L1')[1].split(' ')[1:-1]
 

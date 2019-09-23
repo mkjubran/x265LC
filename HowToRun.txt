@@ -1,0 +1,3 @@
+To produce the results
+1- ./ffmpeg/ffmpeg -y -i ../../vid/park_joy_640480.mp4 -vcodec libx265 -x265-params ref=1:crf=23:bframes=0  -pass 1 -an -f mp4 /dev/null
+2- python ./Produce_x265_InfoPerFrame.py --file_video=../../vid/park_joy_640480.mp4 --file_perframe=x265LC_InfoPerFrame.txt --path=../x265LC_Results
