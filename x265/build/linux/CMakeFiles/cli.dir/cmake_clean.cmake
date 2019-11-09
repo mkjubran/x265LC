@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cli.dir/x265.cpp.o"
   "x265.pdb"
   "x265"
+  "x265.pdb"
+  "CMakeFiles/CMakeRelink.dir/x265"
 )
 
 # Per-language clean rules from dependency scanning.

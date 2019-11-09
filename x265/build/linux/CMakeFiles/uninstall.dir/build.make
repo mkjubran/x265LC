@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source
+CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
+CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/cmake/cmake_uninstall.cmake
+	/usr/bin/cmake -P /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/cmake/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

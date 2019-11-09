@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source
+CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
+CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,28 +78,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -110,6 +88,17 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,14 +113,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_progress_start /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common/CMakeFiles/progress.marks
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles 0
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_progress_start /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common/CMakeFiles/progress.marks
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/clean
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +130,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 common/CMakeFiles/common.dir/rule:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
 .PHONY : common/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -166,7 +155,7 @@ common: common/CMakeFiles/common.dir/rule
 
 # fast build rule for target.
 common/fast:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
 .PHONY : common/fast
 
 bitstream.o: bitstream.cpp.o
@@ -175,7 +164,7 @@ bitstream.o: bitstream.cpp.o
 
 # target to build an object file
 bitstream.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.o
 .PHONY : bitstream.cpp.o
 
 bitstream.i: bitstream.cpp.i
@@ -184,7 +173,7 @@ bitstream.i: bitstream.cpp.i
 
 # target to preprocess a source file
 bitstream.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.i
 .PHONY : bitstream.cpp.i
 
 bitstream.s: bitstream.cpp.s
@@ -193,7 +182,7 @@ bitstream.s: bitstream.cpp.s
 
 # target to generate assembly for a file
 bitstream.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/bitstream.cpp.s
 .PHONY : bitstream.cpp.s
 
 common.o: common.cpp.o
@@ -202,7 +191,7 @@ common.o: common.cpp.o
 
 # target to build an object file
 common.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.o
 .PHONY : common.cpp.o
 
 common.i: common.cpp.i
@@ -211,7 +200,7 @@ common.i: common.cpp.i
 
 # target to preprocess a source file
 common.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.i
 .PHONY : common.cpp.i
 
 common.s: common.cpp.s
@@ -220,7 +209,7 @@ common.s: common.cpp.s
 
 # target to generate assembly for a file
 common.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.s
 .PHONY : common.cpp.s
 
 constants.o: constants.cpp.o
@@ -229,7 +218,7 @@ constants.o: constants.cpp.o
 
 # target to build an object file
 constants.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.o
 .PHONY : constants.cpp.o
 
 constants.i: constants.cpp.i
@@ -238,7 +227,7 @@ constants.i: constants.cpp.i
 
 # target to preprocess a source file
 constants.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.i
 .PHONY : constants.cpp.i
 
 constants.s: constants.cpp.s
@@ -247,7 +236,7 @@ constants.s: constants.cpp.s
 
 # target to generate assembly for a file
 constants.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/constants.cpp.s
 .PHONY : constants.cpp.s
 
 cpu.o: cpu.cpp.o
@@ -256,7 +245,7 @@ cpu.o: cpu.cpp.o
 
 # target to build an object file
 cpu.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.o
 .PHONY : cpu.cpp.o
 
 cpu.i: cpu.cpp.i
@@ -265,7 +254,7 @@ cpu.i: cpu.cpp.i
 
 # target to preprocess a source file
 cpu.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.i
 .PHONY : cpu.cpp.i
 
 cpu.s: cpu.cpp.s
@@ -274,7 +263,7 @@ cpu.s: cpu.cpp.s
 
 # target to generate assembly for a file
 cpu.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cpu.cpp.s
 .PHONY : cpu.cpp.s
 
 cudata.o: cudata.cpp.o
@@ -283,7 +272,7 @@ cudata.o: cudata.cpp.o
 
 # target to build an object file
 cudata.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.o
 .PHONY : cudata.cpp.o
 
 cudata.i: cudata.cpp.i
@@ -292,7 +281,7 @@ cudata.i: cudata.cpp.i
 
 # target to preprocess a source file
 cudata.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.i
 .PHONY : cudata.cpp.i
 
 cudata.s: cudata.cpp.s
@@ -301,7 +290,7 @@ cudata.s: cudata.cpp.s
 
 # target to generate assembly for a file
 cudata.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/cudata.cpp.s
 .PHONY : cudata.cpp.s
 
 dct.o: dct.cpp.o
@@ -310,7 +299,7 @@ dct.o: dct.cpp.o
 
 # target to build an object file
 dct.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.o
 .PHONY : dct.cpp.o
 
 dct.i: dct.cpp.i
@@ -319,7 +308,7 @@ dct.i: dct.cpp.i
 
 # target to preprocess a source file
 dct.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.i
 .PHONY : dct.cpp.i
 
 dct.s: dct.cpp.s
@@ -328,7 +317,7 @@ dct.s: dct.cpp.s
 
 # target to generate assembly for a file
 dct.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/dct.cpp.s
 .PHONY : dct.cpp.s
 
 deblock.o: deblock.cpp.o
@@ -337,7 +326,7 @@ deblock.o: deblock.cpp.o
 
 # target to build an object file
 deblock.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.o
 .PHONY : deblock.cpp.o
 
 deblock.i: deblock.cpp.i
@@ -346,7 +335,7 @@ deblock.i: deblock.cpp.i
 
 # target to preprocess a source file
 deblock.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.i
 .PHONY : deblock.cpp.i
 
 deblock.s: deblock.cpp.s
@@ -355,7 +344,7 @@ deblock.s: deblock.cpp.s
 
 # target to generate assembly for a file
 deblock.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/deblock.cpp.s
 .PHONY : deblock.cpp.s
 
 frame.o: frame.cpp.o
@@ -364,7 +353,7 @@ frame.o: frame.cpp.o
 
 # target to build an object file
 frame.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.o
 .PHONY : frame.cpp.o
 
 frame.i: frame.cpp.i
@@ -373,7 +362,7 @@ frame.i: frame.cpp.i
 
 # target to preprocess a source file
 frame.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.i
 .PHONY : frame.cpp.i
 
 frame.s: frame.cpp.s
@@ -382,7 +371,7 @@ frame.s: frame.cpp.s
 
 # target to generate assembly for a file
 frame.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/frame.cpp.s
 .PHONY : frame.cpp.s
 
 framedata.o: framedata.cpp.o
@@ -391,7 +380,7 @@ framedata.o: framedata.cpp.o
 
 # target to build an object file
 framedata.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.o
 .PHONY : framedata.cpp.o
 
 framedata.i: framedata.cpp.i
@@ -400,7 +389,7 @@ framedata.i: framedata.cpp.i
 
 # target to preprocess a source file
 framedata.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.i
 .PHONY : framedata.cpp.i
 
 framedata.s: framedata.cpp.s
@@ -409,7 +398,7 @@ framedata.s: framedata.cpp.s
 
 # target to generate assembly for a file
 framedata.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/framedata.cpp.s
 .PHONY : framedata.cpp.s
 
 intrapred.o: intrapred.cpp.o
@@ -418,7 +407,7 @@ intrapred.o: intrapred.cpp.o
 
 # target to build an object file
 intrapred.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.o
 .PHONY : intrapred.cpp.o
 
 intrapred.i: intrapred.cpp.i
@@ -427,7 +416,7 @@ intrapred.i: intrapred.cpp.i
 
 # target to preprocess a source file
 intrapred.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.i
 .PHONY : intrapred.cpp.i
 
 intrapred.s: intrapred.cpp.s
@@ -436,7 +425,7 @@ intrapred.s: intrapred.cpp.s
 
 # target to generate assembly for a file
 intrapred.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/intrapred.cpp.s
 .PHONY : intrapred.cpp.s
 
 ipfilter.o: ipfilter.cpp.o
@@ -445,7 +434,7 @@ ipfilter.o: ipfilter.cpp.o
 
 # target to build an object file
 ipfilter.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.o
 .PHONY : ipfilter.cpp.o
 
 ipfilter.i: ipfilter.cpp.i
@@ -454,7 +443,7 @@ ipfilter.i: ipfilter.cpp.i
 
 # target to preprocess a source file
 ipfilter.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.i
 .PHONY : ipfilter.cpp.i
 
 ipfilter.s: ipfilter.cpp.s
@@ -463,7 +452,7 @@ ipfilter.s: ipfilter.cpp.s
 
 # target to generate assembly for a file
 ipfilter.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ipfilter.cpp.s
 .PHONY : ipfilter.cpp.s
 
 loopfilter.o: loopfilter.cpp.o
@@ -472,7 +461,7 @@ loopfilter.o: loopfilter.cpp.o
 
 # target to build an object file
 loopfilter.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.o
 .PHONY : loopfilter.cpp.o
 
 loopfilter.i: loopfilter.cpp.i
@@ -481,7 +470,7 @@ loopfilter.i: loopfilter.cpp.i
 
 # target to preprocess a source file
 loopfilter.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.i
 .PHONY : loopfilter.cpp.i
 
 loopfilter.s: loopfilter.cpp.s
@@ -490,7 +479,7 @@ loopfilter.s: loopfilter.cpp.s
 
 # target to generate assembly for a file
 loopfilter.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/loopfilter.cpp.s
 .PHONY : loopfilter.cpp.s
 
 lowpassdct.o: lowpassdct.cpp.o
@@ -499,7 +488,7 @@ lowpassdct.o: lowpassdct.cpp.o
 
 # target to build an object file
 lowpassdct.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.o
 .PHONY : lowpassdct.cpp.o
 
 lowpassdct.i: lowpassdct.cpp.i
@@ -508,7 +497,7 @@ lowpassdct.i: lowpassdct.cpp.i
 
 # target to preprocess a source file
 lowpassdct.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.i
 .PHONY : lowpassdct.cpp.i
 
 lowpassdct.s: lowpassdct.cpp.s
@@ -517,7 +506,7 @@ lowpassdct.s: lowpassdct.cpp.s
 
 # target to generate assembly for a file
 lowpassdct.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowpassdct.cpp.s
 .PHONY : lowpassdct.cpp.s
 
 lowres.o: lowres.cpp.o
@@ -526,7 +515,7 @@ lowres.o: lowres.cpp.o
 
 # target to build an object file
 lowres.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.o
 .PHONY : lowres.cpp.o
 
 lowres.i: lowres.cpp.i
@@ -535,7 +524,7 @@ lowres.i: lowres.cpp.i
 
 # target to preprocess a source file
 lowres.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.i
 .PHONY : lowres.cpp.i
 
 lowres.s: lowres.cpp.s
@@ -544,7 +533,7 @@ lowres.s: lowres.cpp.s
 
 # target to generate assembly for a file
 lowres.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/lowres.cpp.s
 .PHONY : lowres.cpp.s
 
 md5.o: md5.cpp.o
@@ -553,7 +542,7 @@ md5.o: md5.cpp.o
 
 # target to build an object file
 md5.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.o
 .PHONY : md5.cpp.o
 
 md5.i: md5.cpp.i
@@ -562,7 +551,7 @@ md5.i: md5.cpp.i
 
 # target to preprocess a source file
 md5.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.i
 .PHONY : md5.cpp.i
 
 md5.s: md5.cpp.s
@@ -571,7 +560,7 @@ md5.s: md5.cpp.s
 
 # target to generate assembly for a file
 md5.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/md5.cpp.s
 .PHONY : md5.cpp.s
 
 param.o: param.cpp.o
@@ -580,7 +569,7 @@ param.o: param.cpp.o
 
 # target to build an object file
 param.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.o
 .PHONY : param.cpp.o
 
 param.i: param.cpp.i
@@ -589,7 +578,7 @@ param.i: param.cpp.i
 
 # target to preprocess a source file
 param.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.i
 .PHONY : param.cpp.i
 
 param.s: param.cpp.s
@@ -598,7 +587,7 @@ param.s: param.cpp.s
 
 # target to generate assembly for a file
 param.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/param.cpp.s
 .PHONY : param.cpp.s
 
 piclist.o: piclist.cpp.o
@@ -607,7 +596,7 @@ piclist.o: piclist.cpp.o
 
 # target to build an object file
 piclist.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.o
 .PHONY : piclist.cpp.o
 
 piclist.i: piclist.cpp.i
@@ -616,7 +605,7 @@ piclist.i: piclist.cpp.i
 
 # target to preprocess a source file
 piclist.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.i
 .PHONY : piclist.cpp.i
 
 piclist.s: piclist.cpp.s
@@ -625,7 +614,7 @@ piclist.s: piclist.cpp.s
 
 # target to generate assembly for a file
 piclist.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/piclist.cpp.s
 .PHONY : piclist.cpp.s
 
 picyuv.o: picyuv.cpp.o
@@ -634,7 +623,7 @@ picyuv.o: picyuv.cpp.o
 
 # target to build an object file
 picyuv.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.o
 .PHONY : picyuv.cpp.o
 
 picyuv.i: picyuv.cpp.i
@@ -643,7 +632,7 @@ picyuv.i: picyuv.cpp.i
 
 # target to preprocess a source file
 picyuv.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.i
 .PHONY : picyuv.cpp.i
 
 picyuv.s: picyuv.cpp.s
@@ -652,7 +641,7 @@ picyuv.s: picyuv.cpp.s
 
 # target to generate assembly for a file
 picyuv.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/picyuv.cpp.s
 .PHONY : picyuv.cpp.s
 
 pixel.o: pixel.cpp.o
@@ -661,7 +650,7 @@ pixel.o: pixel.cpp.o
 
 # target to build an object file
 pixel.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.o
 .PHONY : pixel.cpp.o
 
 pixel.i: pixel.cpp.i
@@ -670,7 +659,7 @@ pixel.i: pixel.cpp.i
 
 # target to preprocess a source file
 pixel.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.i
 .PHONY : pixel.cpp.i
 
 pixel.s: pixel.cpp.s
@@ -679,7 +668,7 @@ pixel.s: pixel.cpp.s
 
 # target to generate assembly for a file
 pixel.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/pixel.cpp.s
 .PHONY : pixel.cpp.s
 
 predict.o: predict.cpp.o
@@ -688,7 +677,7 @@ predict.o: predict.cpp.o
 
 # target to build an object file
 predict.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.o
 .PHONY : predict.cpp.o
 
 predict.i: predict.cpp.i
@@ -697,7 +686,7 @@ predict.i: predict.cpp.i
 
 # target to preprocess a source file
 predict.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.i
 .PHONY : predict.cpp.i
 
 predict.s: predict.cpp.s
@@ -706,7 +695,7 @@ predict.s: predict.cpp.s
 
 # target to generate assembly for a file
 predict.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/predict.cpp.s
 .PHONY : predict.cpp.s
 
 primitives.o: primitives.cpp.o
@@ -715,7 +704,7 @@ primitives.o: primitives.cpp.o
 
 # target to build an object file
 primitives.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.o
 .PHONY : primitives.cpp.o
 
 primitives.i: primitives.cpp.i
@@ -724,7 +713,7 @@ primitives.i: primitives.cpp.i
 
 # target to preprocess a source file
 primitives.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.i
 .PHONY : primitives.cpp.i
 
 primitives.s: primitives.cpp.s
@@ -733,7 +722,7 @@ primitives.s: primitives.cpp.s
 
 # target to generate assembly for a file
 primitives.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/primitives.cpp.s
 .PHONY : primitives.cpp.s
 
 quant.o: quant.cpp.o
@@ -742,7 +731,7 @@ quant.o: quant.cpp.o
 
 # target to build an object file
 quant.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.o
 .PHONY : quant.cpp.o
 
 quant.i: quant.cpp.i
@@ -751,7 +740,7 @@ quant.i: quant.cpp.i
 
 # target to preprocess a source file
 quant.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.i
 .PHONY : quant.cpp.i
 
 quant.s: quant.cpp.s
@@ -760,7 +749,7 @@ quant.s: quant.cpp.s
 
 # target to generate assembly for a file
 quant.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/quant.cpp.s
 .PHONY : quant.cpp.s
 
 scalinglist.o: scalinglist.cpp.o
@@ -769,7 +758,7 @@ scalinglist.o: scalinglist.cpp.o
 
 # target to build an object file
 scalinglist.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.o
 .PHONY : scalinglist.cpp.o
 
 scalinglist.i: scalinglist.cpp.i
@@ -778,7 +767,7 @@ scalinglist.i: scalinglist.cpp.i
 
 # target to preprocess a source file
 scalinglist.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.i
 .PHONY : scalinglist.cpp.i
 
 scalinglist.s: scalinglist.cpp.s
@@ -787,7 +776,7 @@ scalinglist.s: scalinglist.cpp.s
 
 # target to generate assembly for a file
 scalinglist.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/scalinglist.cpp.s
 .PHONY : scalinglist.cpp.s
 
 shortyuv.o: shortyuv.cpp.o
@@ -796,7 +785,7 @@ shortyuv.o: shortyuv.cpp.o
 
 # target to build an object file
 shortyuv.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.o
 .PHONY : shortyuv.cpp.o
 
 shortyuv.i: shortyuv.cpp.i
@@ -805,7 +794,7 @@ shortyuv.i: shortyuv.cpp.i
 
 # target to preprocess a source file
 shortyuv.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.i
 .PHONY : shortyuv.cpp.i
 
 shortyuv.s: shortyuv.cpp.s
@@ -814,7 +803,7 @@ shortyuv.s: shortyuv.cpp.s
 
 # target to generate assembly for a file
 shortyuv.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/shortyuv.cpp.s
 .PHONY : shortyuv.cpp.s
 
 slice.o: slice.cpp.o
@@ -823,7 +812,7 @@ slice.o: slice.cpp.o
 
 # target to build an object file
 slice.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.o
 .PHONY : slice.cpp.o
 
 slice.i: slice.cpp.i
@@ -832,7 +821,7 @@ slice.i: slice.cpp.i
 
 # target to preprocess a source file
 slice.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.i
 .PHONY : slice.cpp.i
 
 slice.s: slice.cpp.s
@@ -841,7 +830,7 @@ slice.s: slice.cpp.s
 
 # target to generate assembly for a file
 slice.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/slice.cpp.s
 .PHONY : slice.cpp.s
 
 threading.o: threading.cpp.o
@@ -850,7 +839,7 @@ threading.o: threading.cpp.o
 
 # target to build an object file
 threading.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.o
 .PHONY : threading.cpp.o
 
 threading.i: threading.cpp.i
@@ -859,7 +848,7 @@ threading.i: threading.cpp.i
 
 # target to preprocess a source file
 threading.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.i
 .PHONY : threading.cpp.i
 
 threading.s: threading.cpp.s
@@ -868,7 +857,7 @@ threading.s: threading.cpp.s
 
 # target to generate assembly for a file
 threading.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threading.cpp.s
 .PHONY : threading.cpp.s
 
 threadpool.o: threadpool.cpp.o
@@ -877,7 +866,7 @@ threadpool.o: threadpool.cpp.o
 
 # target to build an object file
 threadpool.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.o
 .PHONY : threadpool.cpp.o
 
 threadpool.i: threadpool.cpp.i
@@ -886,7 +875,7 @@ threadpool.i: threadpool.cpp.i
 
 # target to preprocess a source file
 threadpool.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.i
 .PHONY : threadpool.cpp.i
 
 threadpool.s: threadpool.cpp.s
@@ -895,7 +884,7 @@ threadpool.s: threadpool.cpp.s
 
 # target to generate assembly for a file
 threadpool.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/threadpool.cpp.s
 .PHONY : threadpool.cpp.s
 
 vec/dct-sse3.o: vec/dct-sse3.cpp.o
@@ -904,7 +893,7 @@ vec/dct-sse3.o: vec/dct-sse3.cpp.o
 
 # target to build an object file
 vec/dct-sse3.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o
 .PHONY : vec/dct-sse3.cpp.o
 
 vec/dct-sse3.i: vec/dct-sse3.cpp.i
@@ -913,7 +902,7 @@ vec/dct-sse3.i: vec/dct-sse3.cpp.i
 
 # target to preprocess a source file
 vec/dct-sse3.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.i
 .PHONY : vec/dct-sse3.cpp.i
 
 vec/dct-sse3.s: vec/dct-sse3.cpp.s
@@ -922,7 +911,7 @@ vec/dct-sse3.s: vec/dct-sse3.cpp.s
 
 # target to generate assembly for a file
 vec/dct-sse3.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse3.cpp.s
 .PHONY : vec/dct-sse3.cpp.s
 
 vec/dct-sse41.o: vec/dct-sse41.cpp.o
@@ -931,7 +920,7 @@ vec/dct-sse41.o: vec/dct-sse41.cpp.o
 
 # target to build an object file
 vec/dct-sse41.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o
 .PHONY : vec/dct-sse41.cpp.o
 
 vec/dct-sse41.i: vec/dct-sse41.cpp.i
@@ -940,7 +929,7 @@ vec/dct-sse41.i: vec/dct-sse41.cpp.i
 
 # target to preprocess a source file
 vec/dct-sse41.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.i
 .PHONY : vec/dct-sse41.cpp.i
 
 vec/dct-sse41.s: vec/dct-sse41.cpp.s
@@ -949,7 +938,7 @@ vec/dct-sse41.s: vec/dct-sse41.cpp.s
 
 # target to generate assembly for a file
 vec/dct-sse41.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-sse41.cpp.s
 .PHONY : vec/dct-sse41.cpp.s
 
 vec/dct-ssse3.o: vec/dct-ssse3.cpp.o
@@ -958,7 +947,7 @@ vec/dct-ssse3.o: vec/dct-ssse3.cpp.o
 
 # target to build an object file
 vec/dct-ssse3.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o
 .PHONY : vec/dct-ssse3.cpp.o
 
 vec/dct-ssse3.i: vec/dct-ssse3.cpp.i
@@ -967,7 +956,7 @@ vec/dct-ssse3.i: vec/dct-ssse3.cpp.i
 
 # target to preprocess a source file
 vec/dct-ssse3.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.i
 .PHONY : vec/dct-ssse3.cpp.i
 
 vec/dct-ssse3.s: vec/dct-ssse3.cpp.s
@@ -976,7 +965,7 @@ vec/dct-ssse3.s: vec/dct-ssse3.cpp.s
 
 # target to generate assembly for a file
 vec/dct-ssse3.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.s
 .PHONY : vec/dct-ssse3.cpp.s
 
 vec/vec-primitives.o: vec/vec-primitives.cpp.o
@@ -985,7 +974,7 @@ vec/vec-primitives.o: vec/vec-primitives.cpp.o
 
 # target to build an object file
 vec/vec-primitives.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o
 .PHONY : vec/vec-primitives.cpp.o
 
 vec/vec-primitives.i: vec/vec-primitives.cpp.i
@@ -994,7 +983,7 @@ vec/vec-primitives.i: vec/vec-primitives.cpp.i
 
 # target to preprocess a source file
 vec/vec-primitives.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.i
 .PHONY : vec/vec-primitives.cpp.i
 
 vec/vec-primitives.s: vec/vec-primitives.cpp.s
@@ -1003,7 +992,7 @@ vec/vec-primitives.s: vec/vec-primitives.cpp.s
 
 # target to generate assembly for a file
 vec/vec-primitives.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/vec/vec-primitives.cpp.s
 .PHONY : vec/vec-primitives.cpp.s
 
 version.o: version.cpp.o
@@ -1012,7 +1001,7 @@ version.o: version.cpp.o
 
 # target to build an object file
 version.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.o
 .PHONY : version.cpp.o
 
 version.i: version.cpp.i
@@ -1021,7 +1010,7 @@ version.i: version.cpp.i
 
 # target to preprocess a source file
 version.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.i
 .PHONY : version.cpp.i
 
 version.s: version.cpp.s
@@ -1030,7 +1019,7 @@ version.s: version.cpp.s
 
 # target to generate assembly for a file
 version.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/version.cpp.s
 .PHONY : version.cpp.s
 
 wavefront.o: wavefront.cpp.o
@@ -1039,7 +1028,7 @@ wavefront.o: wavefront.cpp.o
 
 # target to build an object file
 wavefront.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.o
 .PHONY : wavefront.cpp.o
 
 wavefront.i: wavefront.cpp.i
@@ -1048,7 +1037,7 @@ wavefront.i: wavefront.cpp.i
 
 # target to preprocess a source file
 wavefront.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.i
 .PHONY : wavefront.cpp.i
 
 wavefront.s: wavefront.cpp.s
@@ -1057,7 +1046,7 @@ wavefront.s: wavefront.cpp.s
 
 # target to generate assembly for a file
 wavefront.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/wavefront.cpp.s
 .PHONY : wavefront.cpp.s
 
 x86/asm-primitives.o: x86/asm-primitives.cpp.o
@@ -1066,7 +1055,7 @@ x86/asm-primitives.o: x86/asm-primitives.cpp.o
 
 # target to build an object file
 x86/asm-primitives.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o
 .PHONY : x86/asm-primitives.cpp.o
 
 x86/asm-primitives.i: x86/asm-primitives.cpp.i
@@ -1075,7 +1064,7 @@ x86/asm-primitives.i: x86/asm-primitives.cpp.i
 
 # target to preprocess a source file
 x86/asm-primitives.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.i
 .PHONY : x86/asm-primitives.cpp.i
 
 x86/asm-primitives.s: x86/asm-primitives.cpp.s
@@ -1084,7 +1073,7 @@ x86/asm-primitives.s: x86/asm-primitives.cpp.s
 
 # target to generate assembly for a file
 x86/asm-primitives.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/asm-primitives.cpp.s
 .PHONY : x86/asm-primitives.cpp.s
 
 x86/blockcopy8.o: x86/blockcopy8.asm.o
@@ -1093,7 +1082,7 @@ x86/blockcopy8.o: x86/blockcopy8.asm.o
 
 # target to build an object file
 x86/blockcopy8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/blockcopy8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/blockcopy8.asm.o
 .PHONY : x86/blockcopy8.asm.o
 
 x86/const-a.o: x86/const-a.asm.o
@@ -1102,7 +1091,7 @@ x86/const-a.o: x86/const-a.asm.o
 
 # target to build an object file
 x86/const-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/const-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/const-a.asm.o
 .PHONY : x86/const-a.asm.o
 
 x86/cpu-a.o: x86/cpu-a.asm.o
@@ -1111,7 +1100,7 @@ x86/cpu-a.o: x86/cpu-a.asm.o
 
 # target to build an object file
 x86/cpu-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/cpu-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/cpu-a.asm.o
 .PHONY : x86/cpu-a.asm.o
 
 x86/dct8.o: x86/dct8.asm.o
@@ -1120,7 +1109,7 @@ x86/dct8.o: x86/dct8.asm.o
 
 # target to build an object file
 x86/dct8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/dct8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/dct8.asm.o
 .PHONY : x86/dct8.asm.o
 
 x86/h-ipfilter8.o: x86/h-ipfilter8.asm.o
@@ -1129,7 +1118,7 @@ x86/h-ipfilter8.o: x86/h-ipfilter8.asm.o
 
 # target to build an object file
 x86/h-ipfilter8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o
 .PHONY : x86/h-ipfilter8.asm.o
 
 x86/intrapred8.o: x86/intrapred8.asm.o
@@ -1138,7 +1127,7 @@ x86/intrapred8.o: x86/intrapred8.asm.o
 
 # target to build an object file
 x86/intrapred8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/intrapred8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/intrapred8.asm.o
 .PHONY : x86/intrapred8.asm.o
 
 x86/intrapred8_allangs.o: x86/intrapred8_allangs.asm.o
@@ -1147,7 +1136,7 @@ x86/intrapred8_allangs.o: x86/intrapred8_allangs.asm.o
 
 # target to build an object file
 x86/intrapred8_allangs.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o
 .PHONY : x86/intrapred8_allangs.asm.o
 
 x86/ipfilter8.o: x86/ipfilter8.asm.o
@@ -1156,7 +1145,7 @@ x86/ipfilter8.o: x86/ipfilter8.asm.o
 
 # target to build an object file
 x86/ipfilter8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/ipfilter8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/ipfilter8.asm.o
 .PHONY : x86/ipfilter8.asm.o
 
 x86/loopfilter.o: x86/loopfilter.asm.o
@@ -1165,7 +1154,7 @@ x86/loopfilter.o: x86/loopfilter.asm.o
 
 # target to build an object file
 x86/loopfilter.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/loopfilter.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/loopfilter.asm.o
 .PHONY : x86/loopfilter.asm.o
 
 x86/mc-a.o: x86/mc-a.asm.o
@@ -1174,7 +1163,7 @@ x86/mc-a.o: x86/mc-a.asm.o
 
 # target to build an object file
 x86/mc-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/mc-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/mc-a.asm.o
 .PHONY : x86/mc-a.asm.o
 
 x86/mc-a2.o: x86/mc-a2.asm.o
@@ -1183,7 +1172,7 @@ x86/mc-a2.o: x86/mc-a2.asm.o
 
 # target to build an object file
 x86/mc-a2.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/mc-a2.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/mc-a2.asm.o
 .PHONY : x86/mc-a2.asm.o
 
 x86/pixel-a.o: x86/pixel-a.asm.o
@@ -1192,7 +1181,7 @@ x86/pixel-a.o: x86/pixel-a.asm.o
 
 # target to build an object file
 x86/pixel-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixel-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixel-a.asm.o
 .PHONY : x86/pixel-a.asm.o
 
 x86/pixel-util8.o: x86/pixel-util8.asm.o
@@ -1201,7 +1190,7 @@ x86/pixel-util8.o: x86/pixel-util8.asm.o
 
 # target to build an object file
 x86/pixel-util8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixel-util8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixel-util8.asm.o
 .PHONY : x86/pixel-util8.asm.o
 
 x86/pixeladd8.o: x86/pixeladd8.asm.o
@@ -1210,7 +1199,7 @@ x86/pixeladd8.o: x86/pixeladd8.asm.o
 
 # target to build an object file
 x86/pixeladd8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixeladd8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/pixeladd8.asm.o
 .PHONY : x86/pixeladd8.asm.o
 
 x86/sad-a.o: x86/sad-a.asm.o
@@ -1219,7 +1208,7 @@ x86/sad-a.o: x86/sad-a.asm.o
 
 # target to build an object file
 x86/sad-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/sad-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/sad-a.asm.o
 .PHONY : x86/sad-a.asm.o
 
 x86/seaintegral.o: x86/seaintegral.asm.o
@@ -1228,7 +1217,7 @@ x86/seaintegral.o: x86/seaintegral.asm.o
 
 # target to build an object file
 x86/seaintegral.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/seaintegral.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/seaintegral.asm.o
 .PHONY : x86/seaintegral.asm.o
 
 x86/ssd-a.o: x86/ssd-a.asm.o
@@ -1237,7 +1226,7 @@ x86/ssd-a.o: x86/ssd-a.asm.o
 
 # target to build an object file
 x86/ssd-a.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/ssd-a.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/ssd-a.asm.o
 .PHONY : x86/ssd-a.asm.o
 
 x86/v4-ipfilter8.o: x86/v4-ipfilter8.asm.o
@@ -1246,7 +1235,7 @@ x86/v4-ipfilter8.o: x86/v4-ipfilter8.asm.o
 
 # target to build an object file
 x86/v4-ipfilter8.asm.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o
 .PHONY : x86/v4-ipfilter8.asm.o
 
 yuv.o: yuv.cpp.o
@@ -1255,7 +1244,7 @@ yuv.o: yuv.cpp.o
 
 # target to build an object file
 yuv.cpp.o:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.o
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.o
 .PHONY : yuv.cpp.o
 
 yuv.i: yuv.cpp.i
@@ -1264,7 +1253,7 @@ yuv.i: yuv.cpp.i
 
 # target to preprocess a source file
 yuv.cpp.i:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.i
 .PHONY : yuv.cpp.i
 
 yuv.s: yuv.cpp.s
@@ -1273,7 +1262,7 @@ yuv.s: yuv.cpp.s
 
 # target to generate assembly for a file
 yuv.cpp.s:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/yuv.cpp.s
 .PHONY : yuv.cpp.s
 
 # Help Target
@@ -1284,10 +1273,9 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... common"
-	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bitstream.o"
 	@echo "... bitstream.i"
@@ -1423,6 +1411,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

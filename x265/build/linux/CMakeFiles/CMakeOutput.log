@@ -726,3 +726,2091 @@ Linking C executable cmTC_fbcc2
 make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/CMakeTmp'
 
 
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ad719/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad719.dir/build.make CMakeFiles/cmTC_ad719.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad719.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ad719.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ad719
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad719.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ad719.dir/CheckSymbolExists.c.o  -o cmTC_ad719 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_373f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_373f3.dir/build.make CMakeFiles/cmTC_373f3.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_373f3.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_373f3.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_373f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_373f3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_373f3.dir/CheckIncludeFiles.c.o  -o cmTC_373f3 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfcaa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfcaa.dir/build.make CMakeFiles/cmTC_cfcaa.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cfcaa.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_cfcaa.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cfcaa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfcaa.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_cfcaa.dir/src.cxx.o  -o cmTC_cfcaa -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e8647/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e8647.dir/build.make CMakeFiles/cmTC_e8647.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e8647.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_e8647.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e8647
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8647.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_e8647.dir/src.cxx.o  -o cmTC_e8647 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74657/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74657.dir/build.make CMakeFiles/cmTC_74657.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_74657.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_74657.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_74657
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74657.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_74657.dir/src.cxx.o  -o cmTC_74657 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8fa04/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8fa04.dir/build.make CMakeFiles/cmTC_8fa04.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8fa04.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_8fa04.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8fa04
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fa04.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_8fa04.dir/src.cxx.o  -o cmTC_8fa04 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e7b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e7b7.dir/build.make CMakeFiles/cmTC_4e7b7.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e7b7.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_4e7b7.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4e7b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e7b7.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_4e7b7.dir/src.cxx.o  -o cmTC_4e7b7 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_91303/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91303.dir/build.make CMakeFiles/cmTC_91303.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91303.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_91303.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_91303
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91303.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_91303.dir/src.cxx.o  -o cmTC_91303 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7edf1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7edf1.dir/build.make CMakeFiles/cmTC_7edf1.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7edf1.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7edf1.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7edf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7edf1.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_7edf1.dir/CheckSymbolExists.c.o  -o cmTC_7edf1 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ab8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ab8f.dir/build.make CMakeFiles/cmTC_3ab8f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ab8f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_3ab8f.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_3ab8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ab8f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_3ab8f.dir/CheckIncludeFiles.c.o  -o cmTC_3ab8f -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_364ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_364ab.dir/build.make CMakeFiles/cmTC_364ab.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_364ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_364ab.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_364ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_364ab.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_364ab.dir/CheckSymbolExists.c.o  -o cmTC_364ab -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c3b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c3b6.dir/build.make CMakeFiles/cmTC_3c3b6.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c3b6.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_3c3b6.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_3c3b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c3b6.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_3c3b6.dir/CheckIncludeFiles.c.o  -o cmTC_3c3b6 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ce53/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5ce53.dir/build.make CMakeFiles/cmTC_5ce53.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ce53.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_5ce53.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5ce53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ce53.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_5ce53.dir/src.cxx.o  -o cmTC_5ce53 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7ce57/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ce57.dir/build.make CMakeFiles/cmTC_7ce57.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7ce57.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_7ce57.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7ce57
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ce57.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_7ce57.dir/src.cxx.o  -o cmTC_7ce57 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97c63/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97c63.dir/build.make CMakeFiles/cmTC_97c63.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97c63.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_97c63.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_97c63
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97c63.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_97c63.dir/src.cxx.o  -o cmTC_97c63 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2d345/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2d345.dir/build.make CMakeFiles/cmTC_2d345.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2d345.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_2d345.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2d345
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d345.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_2d345.dir/src.cxx.o  -o cmTC_2d345 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_91e6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91e6c.dir/build.make CMakeFiles/cmTC_91e6c.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91e6c.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_91e6c.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_91e6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91e6c.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_91e6c.dir/src.cxx.o  -o cmTC_91e6c -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da110/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da110.dir/build.make CMakeFiles/cmTC_da110.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_da110.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_da110.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_da110
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da110.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_da110.dir/src.cxx.o  -o cmTC_da110 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b53bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b53bc.dir/build.make CMakeFiles/cmTC_b53bc.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b53bc.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b53bc.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b53bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b53bc.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b53bc.dir/CheckSymbolExists.c.o  -o cmTC_b53bc -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74a49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74a49.dir/build.make CMakeFiles/cmTC_74a49.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74a49.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_74a49.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_74a49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74a49.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_74a49.dir/CheckIncludeFiles.c.o  -o cmTC_74a49 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89ebf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89ebf.dir/build.make CMakeFiles/cmTC_89ebf.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89ebf.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_89ebf.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_89ebf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89ebf.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_89ebf.dir/CheckSymbolExists.c.o  -o cmTC_89ebf -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14523/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14523.dir/build.make CMakeFiles/cmTC_14523.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14523.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_14523.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_14523
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14523.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_14523.dir/CheckIncludeFiles.c.o  -o cmTC_14523 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56504/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56504.dir/build.make CMakeFiles/cmTC_56504.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56504.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_56504.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_56504
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56504.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_56504.dir/src.cxx.o  -o cmTC_56504 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a24fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a24fe.dir/build.make CMakeFiles/cmTC_a24fe.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a24fe.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_a24fe.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a24fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a24fe.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_a24fe.dir/src.cxx.o  -o cmTC_a24fe -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5e546/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e546.dir/build.make CMakeFiles/cmTC_5e546.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e546.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_5e546.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e546
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e546.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_5e546.dir/src.cxx.o  -o cmTC_5e546 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aa48a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa48a.dir/build.make CMakeFiles/cmTC_aa48a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aa48a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_aa48a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_aa48a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa48a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_aa48a.dir/src.cxx.o  -o cmTC_aa48a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57f4b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57f4b.dir/build.make CMakeFiles/cmTC_57f4b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57f4b.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_57f4b.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_57f4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57f4b.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_57f4b.dir/src.cxx.o  -o cmTC_57f4b -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5fd17/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5fd17.dir/build.make CMakeFiles/cmTC_5fd17.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5fd17.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_5fd17.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5fd17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fd17.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_5fd17.dir/src.cxx.o  -o cmTC_5fd17 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_646c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_646c9.dir/build.make CMakeFiles/cmTC_646c9.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_646c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_646c9.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_646c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_646c9.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_646c9.dir/CheckSymbolExists.c.o  -o cmTC_646c9 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c916b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c916b.dir/build.make CMakeFiles/cmTC_c916b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c916b.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c916b.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_c916b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c916b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c916b.dir/CheckIncludeFiles.c.o  -o cmTC_c916b -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92f5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92f5d.dir/build.make CMakeFiles/cmTC_92f5d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92f5d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_92f5d.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_92f5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92f5d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_92f5d.dir/CheckSymbolExists.c.o  -o cmTC_92f5d -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0e7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0e7a.dir/build.make CMakeFiles/cmTC_b0e7a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0e7a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b0e7a.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_b0e7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0e7a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b0e7a.dir/CheckIncludeFiles.c.o  -o cmTC_b0e7a -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b1e9f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1e9f.dir/build.make CMakeFiles/cmTC_b1e9f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b1e9f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_b1e9f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b1e9f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1e9f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_b1e9f.dir/src.cxx.o  -o cmTC_b1e9f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42a01/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42a01.dir/build.make CMakeFiles/cmTC_42a01.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42a01.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_42a01.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_42a01
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42a01.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_42a01.dir/src.cxx.o  -o cmTC_42a01 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43f6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43f6a.dir/build.make CMakeFiles/cmTC_43f6a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43f6a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_43f6a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_43f6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43f6a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_43f6a.dir/src.cxx.o  -o cmTC_43f6a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_18b0d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_18b0d.dir/build.make CMakeFiles/cmTC_18b0d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_18b0d.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_18b0d.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_18b0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18b0d.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_18b0d.dir/src.cxx.o  -o cmTC_18b0d -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1e1a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e1a4.dir/build.make CMakeFiles/cmTC_1e1a4.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e1a4.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_1e1a4.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1e1a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e1a4.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_1e1a4.dir/src.cxx.o  -o cmTC_1e1a4 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4d9f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4d9f7.dir/build.make CMakeFiles/cmTC_4d9f7.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4d9f7.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_4d9f7.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4d9f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d9f7.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_4d9f7.dir/src.cxx.o  -o cmTC_4d9f7 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a3a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a3a7.dir/build.make CMakeFiles/cmTC_2a3a7.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a3a7.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2a3a7.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2a3a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a3a7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2a3a7.dir/CheckSymbolExists.c.o  -o cmTC_2a3a7 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7a9b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7a9b.dir/build.make CMakeFiles/cmTC_d7a9b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7a9b.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d7a9b.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_d7a9b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7a9b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d7a9b.dir/CheckIncludeFiles.c.o  -o cmTC_d7a9b -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_32287/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32287.dir/build.make CMakeFiles/cmTC_32287.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32287.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_32287.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_32287
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32287.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_32287.dir/CheckSymbolExists.c.o  -o cmTC_32287 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4ad99/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4ad99.dir/build.make CMakeFiles/cmTC_4ad99.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4ad99.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4ad99.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_4ad99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ad99.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4ad99.dir/CheckIncludeFiles.c.o  -o cmTC_4ad99 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fe0ad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe0ad.dir/build.make CMakeFiles/cmTC_fe0ad.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe0ad.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_fe0ad.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fe0ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe0ad.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_fe0ad.dir/src.cxx.o  -o cmTC_fe0ad -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56959/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56959.dir/build.make CMakeFiles/cmTC_56959.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56959.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_56959.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_56959
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56959.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_56959.dir/src.cxx.o  -o cmTC_56959 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9e582/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e582.dir/build.make CMakeFiles/cmTC_9e582.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9e582.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_9e582.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9e582
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e582.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_9e582.dir/src.cxx.o  -o cmTC_9e582 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c296/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c296.dir/build.make CMakeFiles/cmTC_3c296.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3c296.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_3c296.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3c296
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c296.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_3c296.dir/src.cxx.o  -o cmTC_3c296 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_90792/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90792.dir/build.make CMakeFiles/cmTC_90792.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_90792.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_90792.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_90792
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90792.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_90792.dir/src.cxx.o  -o cmTC_90792 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d062f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d062f.dir/build.make CMakeFiles/cmTC_d062f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d062f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_d062f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d062f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d062f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_d062f.dir/src.cxx.o  -o cmTC_d062f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f0bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f0bd.dir/build.make CMakeFiles/cmTC_9f0bd.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f0bd.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9f0bd.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9f0bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f0bd.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9f0bd.dir/CheckSymbolExists.c.o  -o cmTC_9f0bd -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2f66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2f66.dir/build.make CMakeFiles/cmTC_f2f66.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2f66.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f2f66.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_f2f66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2f66.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f2f66.dir/CheckIncludeFiles.c.o  -o cmTC_f2f66 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a47ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a47ab.dir/build.make CMakeFiles/cmTC_a47ab.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a47ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a47ab.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a47ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a47ab.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a47ab.dir/CheckSymbolExists.c.o  -o cmTC_a47ab -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63c3d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63c3d.dir/build.make CMakeFiles/cmTC_63c3d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63c3d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_63c3d.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_63c3d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63c3d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_63c3d.dir/CheckIncludeFiles.c.o  -o cmTC_63c3d -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_145b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_145b5.dir/build.make CMakeFiles/cmTC_145b5.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_145b5.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_145b5.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_145b5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_145b5.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_145b5.dir/src.cxx.o  -o cmTC_145b5 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2df4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2df4a.dir/build.make CMakeFiles/cmTC_2df4a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2df4a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_2df4a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2df4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2df4a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_2df4a.dir/src.cxx.o  -o cmTC_2df4a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96eca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96eca.dir/build.make CMakeFiles/cmTC_96eca.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_96eca.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_96eca.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_96eca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96eca.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_96eca.dir/src.cxx.o  -o cmTC_96eca -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8c5cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c5cd.dir/build.make CMakeFiles/cmTC_8c5cd.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c5cd.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_8c5cd.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8c5cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c5cd.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_8c5cd.dir/src.cxx.o  -o cmTC_8c5cd -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84b5e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84b5e.dir/build.make CMakeFiles/cmTC_84b5e.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_84b5e.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_84b5e.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_84b5e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84b5e.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_84b5e.dir/src.cxx.o  -o cmTC_84b5e -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e60e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e60e9.dir/build.make CMakeFiles/cmTC_e60e9.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e60e9.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_e60e9.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e60e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e60e9.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_e60e9.dir/src.cxx.o  -o cmTC_e60e9 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f1df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f1df.dir/build.make CMakeFiles/cmTC_9f1df.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f1df.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9f1df.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9f1df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f1df.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9f1df.dir/CheckSymbolExists.c.o  -o cmTC_9f1df -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3f5f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f5f6.dir/build.make CMakeFiles/cmTC_3f5f6.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f5f6.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_3f5f6.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_3f5f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f5f6.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_3f5f6.dir/CheckIncludeFiles.c.o  -o cmTC_3f5f6 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b537/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b537.dir/build.make CMakeFiles/cmTC_7b537.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b537.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7b537.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7b537
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b537.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_7b537.dir/CheckSymbolExists.c.o  -o cmTC_7b537 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_91e67/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91e67.dir/build.make CMakeFiles/cmTC_91e67.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91e67.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_91e67.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_91e67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91e67.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_91e67.dir/CheckIncludeFiles.c.o  -o cmTC_91e67 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f212c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f212c.dir/build.make CMakeFiles/cmTC_f212c.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f212c.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_f212c.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f212c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f212c.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_f212c.dir/src.cxx.o  -o cmTC_f212c -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e0c3e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0c3e.dir/build.make CMakeFiles/cmTC_e0c3e.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e0c3e.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_e0c3e.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e0c3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0c3e.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_e0c3e.dir/src.cxx.o  -o cmTC_e0c3e -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4d0f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4d0f7.dir/build.make CMakeFiles/cmTC_4d0f7.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4d0f7.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_4d0f7.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4d0f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d0f7.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_4d0f7.dir/src.cxx.o  -o cmTC_4d0f7 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36ae1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36ae1.dir/build.make CMakeFiles/cmTC_36ae1.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36ae1.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_36ae1.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_36ae1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36ae1.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_36ae1.dir/src.cxx.o  -o cmTC_36ae1 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0121c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0121c.dir/build.make CMakeFiles/cmTC_0121c.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0121c.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_0121c.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0121c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0121c.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_0121c.dir/src.cxx.o  -o cmTC_0121c -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8bb11/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bb11.dir/build.make CMakeFiles/cmTC_8bb11.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8bb11.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_8bb11.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8bb11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bb11.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_8bb11.dir/src.cxx.o  -o cmTC_8bb11 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9a4f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a4f6.dir/build.make CMakeFiles/cmTC_9a4f6.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a4f6.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9a4f6.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9a4f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a4f6.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9a4f6.dir/CheckSymbolExists.c.o  -o cmTC_9a4f6 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b80d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b80d.dir/build.make CMakeFiles/cmTC_3b80d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b80d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_3b80d.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_3b80d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b80d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_3b80d.dir/CheckIncludeFiles.c.o  -o cmTC_3b80d -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8fae3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8fae3.dir/build.make CMakeFiles/cmTC_8fae3.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fae3.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_8fae3.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8fae3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fae3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_8fae3.dir/CheckSymbolExists.c.o  -o cmTC_8fae3 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_61e28/fast"
+/usr/bin/make -f CMakeFiles/cmTC_61e28.dir/build.make CMakeFiles/cmTC_61e28.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61e28.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_61e28.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_61e28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61e28.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_61e28.dir/CheckIncludeFiles.c.o  -o cmTC_61e28 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b343a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b343a.dir/build.make CMakeFiles/cmTC_b343a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b343a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_b343a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b343a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b343a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_b343a.dir/src.cxx.o  -o cmTC_b343a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8aa31/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8aa31.dir/build.make CMakeFiles/cmTC_8aa31.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8aa31.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_8aa31.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8aa31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8aa31.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_8aa31.dir/src.cxx.o  -o cmTC_8aa31 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e436/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e436.dir/build.make CMakeFiles/cmTC_4e436.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e436.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_4e436.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4e436
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e436.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_4e436.dir/src.cxx.o  -o cmTC_4e436 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3d224/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d224.dir/build.make CMakeFiles/cmTC_3d224.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3d224.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_3d224.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3d224
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d224.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_3d224.dir/src.cxx.o  -o cmTC_3d224 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee154/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee154.dir/build.make CMakeFiles/cmTC_ee154.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee154.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_ee154.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee154
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee154.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_ee154.dir/src.cxx.o  -o cmTC_ee154 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29100/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29100.dir/build.make CMakeFiles/cmTC_29100.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_29100.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_29100.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_29100
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29100.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_29100.dir/src.cxx.o  -o cmTC_29100 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56479/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56479.dir/build.make CMakeFiles/cmTC_56479.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56479.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_56479.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_56479
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56479.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_56479.dir/CheckSymbolExists.c.o  -o cmTC_56479 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_466ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_466ca.dir/build.make CMakeFiles/cmTC_466ca.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_466ca.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_466ca.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_466ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_466ca.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_466ca.dir/CheckIncludeFiles.c.o  -o cmTC_466ca -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_24994/fast"
+/usr/bin/make -f CMakeFiles/cmTC_24994.dir/build.make CMakeFiles/cmTC_24994.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24994.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_24994.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_24994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24994.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_24994.dir/CheckSymbolExists.c.o  -o cmTC_24994 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80856/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80856.dir/build.make CMakeFiles/cmTC_80856.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80856.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_80856.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_80856
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80856.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_80856.dir/CheckIncludeFiles.c.o  -o cmTC_80856 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_419ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_419ec.dir/build.make CMakeFiles/cmTC_419ec.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_419ec.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_419ec.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_419ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_419ec.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_419ec.dir/src.cxx.o  -o cmTC_419ec -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b2a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b2a2.dir/build.make CMakeFiles/cmTC_0b2a2.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0b2a2.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_0b2a2.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0b2a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b2a2.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_0b2a2.dir/src.cxx.o  -o cmTC_0b2a2 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b1c0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b1c0.dir/build.make CMakeFiles/cmTC_3b1c0.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3b1c0.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_3b1c0.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3b1c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b1c0.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_3b1c0.dir/src.cxx.o  -o cmTC_3b1c0 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f5ffa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f5ffa.dir/build.make CMakeFiles/cmTC_f5ffa.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5ffa.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_f5ffa.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f5ffa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5ffa.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_f5ffa.dir/src.cxx.o  -o cmTC_f5ffa -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f389f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f389f.dir/build.make CMakeFiles/cmTC_f389f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f389f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_f389f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f389f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f389f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_f389f.dir/src.cxx.o  -o cmTC_f389f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_180c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_180c9.dir/build.make CMakeFiles/cmTC_180c9.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_180c9.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_180c9.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_180c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_180c9.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_180c9.dir/src.cxx.o  -o cmTC_180c9 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f3023/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f3023.dir/build.make CMakeFiles/cmTC_f3023.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3023.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f3023.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f3023
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3023.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f3023.dir/CheckSymbolExists.c.o  -o cmTC_f3023 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56974/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56974.dir/build.make CMakeFiles/cmTC_56974.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56974.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_56974.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_56974
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56974.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_56974.dir/CheckIncludeFiles.c.o  -o cmTC_56974 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed2aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed2aa.dir/build.make CMakeFiles/cmTC_ed2aa.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed2aa.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ed2aa.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ed2aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed2aa.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ed2aa.dir/CheckSymbolExists.c.o  -o cmTC_ed2aa -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_27af5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_27af5.dir/build.make CMakeFiles/cmTC_27af5.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27af5.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_27af5.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_27af5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27af5.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_27af5.dir/CheckIncludeFiles.c.o  -o cmTC_27af5 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f7ca7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7ca7.dir/build.make CMakeFiles/cmTC_f7ca7.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7ca7.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_f7ca7.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f7ca7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7ca7.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_f7ca7.dir/src.cxx.o  -o cmTC_f7ca7 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c0ee8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c0ee8.dir/build.make CMakeFiles/cmTC_c0ee8.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0ee8.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_c0ee8.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c0ee8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0ee8.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_c0ee8.dir/src.cxx.o  -o cmTC_c0ee8 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1369c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1369c.dir/build.make CMakeFiles/cmTC_1369c.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1369c.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_1369c.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1369c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1369c.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_1369c.dir/src.cxx.o  -o cmTC_1369c -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c846f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c846f.dir/build.make CMakeFiles/cmTC_c846f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c846f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_c846f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c846f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c846f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_c846f.dir/src.cxx.o  -o cmTC_c846f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7253a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7253a.dir/build.make CMakeFiles/cmTC_7253a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7253a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_7253a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7253a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7253a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_7253a.dir/src.cxx.o  -o cmTC_7253a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fb0a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fb0a2.dir/build.make CMakeFiles/cmTC_fb0a2.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fb0a2.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_fb0a2.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fb0a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb0a2.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_fb0a2.dir/src.cxx.o  -o cmTC_fb0a2 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee82e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee82e.dir/build.make CMakeFiles/cmTC_ee82e.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee82e.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ee82e.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ee82e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee82e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ee82e.dir/CheckSymbolExists.c.o  -o cmTC_ee82e -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_697af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_697af.dir/build.make CMakeFiles/cmTC_697af.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_697af.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_697af.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_697af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697af.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_697af.dir/CheckIncludeFiles.c.o  -o cmTC_697af -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09c74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09c74.dir/build.make CMakeFiles/cmTC_09c74.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09c74.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_09c74.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_09c74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09c74.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_09c74.dir/CheckSymbolExists.c.o  -o cmTC_09c74 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_50cbe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50cbe.dir/build.make CMakeFiles/cmTC_50cbe.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50cbe.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_50cbe.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_50cbe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50cbe.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_50cbe.dir/CheckIncludeFiles.c.o  -o cmTC_50cbe -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9ace/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9ace.dir/build.make CMakeFiles/cmTC_a9ace.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9ace.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_a9ace.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a9ace
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9ace.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_a9ace.dir/src.cxx.o  -o cmTC_a9ace -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6663d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6663d.dir/build.make CMakeFiles/cmTC_6663d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6663d.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_6663d.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6663d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6663d.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_6663d.dir/src.cxx.o  -o cmTC_6663d -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b877/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b877.dir/build.make CMakeFiles/cmTC_4b877.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4b877.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_4b877.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4b877
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b877.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_4b877.dir/src.cxx.o  -o cmTC_4b877 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d1665/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1665.dir/build.make CMakeFiles/cmTC_d1665.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d1665.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_d1665.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d1665
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1665.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_d1665.dir/src.cxx.o  -o cmTC_d1665 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f53a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f53a.dir/build.make CMakeFiles/cmTC_0f53a.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0f53a.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_0f53a.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0f53a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f53a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_0f53a.dir/src.cxx.o  -o cmTC_0f53a -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7238b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7238b.dir/build.make CMakeFiles/cmTC_7238b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7238b.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_7238b.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7238b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7238b.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_7238b.dir/src.cxx.o  -o cmTC_7238b -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fb0d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fb0d.dir/build.make CMakeFiles/cmTC_6fb0d.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fb0d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_6fb0d.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6fb0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fb0d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_6fb0d.dir/CheckSymbolExists.c.o  -o cmTC_6fb0d -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9c1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9c1b.dir/build.make CMakeFiles/cmTC_b9c1b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9c1b.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b9c1b.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_b9c1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9c1b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b9c1b.dir/CheckIncludeFiles.c.o  -o cmTC_b9c1b -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the numa_node_of_cpu exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4b65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4b65.dir/build.make CMakeFiles/cmTC_f4b65.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4b65.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f4b65.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f4b65
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b65.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f4b65.dir/CheckSymbolExists.c.o  -o cmTC_f4b65 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <numa.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef numa_node_of_cpu
+  return ((int*)(&numa_node_of_cpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40c8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40c8f.dir/build.make CMakeFiles/cmTC_40c8f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40c8f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_40c8f.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_40c8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40c8f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_40c8f.dir/CheckIncludeFiles.c.o  -o cmTC_40c8f -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test CC_HAS_NO_STRICT_OVERFLOW succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fbd7f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fbd7f.dir/build.make CMakeFiles/cmTC_fbd7f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbd7f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_STRICT_OVERFLOW   -Wno-strict-overflow -o CMakeFiles/cmTC_fbd7f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fbd7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbd7f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_STRICT_OVERFLOW    CMakeFiles/cmTC_fbd7f.dir/src.cxx.o  -o cmTC_fbd7f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_NARROWING succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f0f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f0f8.dir/build.make CMakeFiles/cmTC_5f0f8.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5f0f8.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_NARROWING   -Wno-narrowing -o CMakeFiles/cmTC_5f0f8.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5f0f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f0f8.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_NARROWING    CMakeFiles/cmTC_5f0f8.dir/src.cxx.o  -o cmTC_5f0f8 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_NO_ARRAY_BOUNDS succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60e02/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60e02.dir/build.make CMakeFiles/cmTC_60e02.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60e02.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_NO_ARRAY_BOUNDS   -Wno-array-bounds -o CMakeFiles/cmTC_60e02.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_60e02
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60e02.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_NO_ARRAY_BOUNDS    CMakeFiles/cmTC_60e02.dir/src.cxx.o  -o cmTC_60e02 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FAST_MATH succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ecf7b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ecf7b.dir/build.make CMakeFiles/cmTC_ecf7b.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ecf7b.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FAST_MATH   -ffast-math -o CMakeFiles/cmTC_ecf7b.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ecf7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf7b.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FAST_MATH    CMakeFiles/cmTC_ecf7b.dir/src.cxx.o  -o cmTC_ecf7b -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_STACK_REALIGN succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f6cbf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f6cbf.dir/build.make CMakeFiles/cmTC_f6cbf.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6cbf.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_STACK_REALIGN   -mstackrealign -o CMakeFiles/cmTC_f6cbf.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f6cbf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6cbf.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_STACK_REALIGN    CMakeFiles/cmTC_f6cbf.dir/src.cxx.o  -o cmTC_f6cbf -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CC_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2d1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2d1f.dir/build.make CMakeFiles/cmTC_c2d1f.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c2d1f.dir/src.cxx.o
+/usr/bin/c++     -DCC_HAS_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTC_c2d1f.dir/src.cxx.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c2d1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2d1f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCC_HAS_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTC_c2d1f.dir/src.cxx.o  -o cmTC_c2d1f -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42458/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42458.dir/build.make CMakeFiles/cmTC_42458.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42458.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_42458.dir/CheckSymbolExists.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_42458
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42458.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_42458.dir/CheckSymbolExists.c.o  -o cmTC_42458 -rdynamic -lnuma 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+File /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8126/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8126.dir/build.make CMakeFiles/cmTC_c8126.dir/build
+make[1]: Entering directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8126.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c8126.dir/CheckIncludeFiles.c.o   -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_c8126
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8126.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c8126.dir/CheckIncludeFiles.c.o  -o cmTC_c8126 -rdynamic 
+make[1]: Leaving directory '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/CMakeTmp'
+
+

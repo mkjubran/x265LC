@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source
+CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
+CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux
 
 # Utility rule file for clean-generated.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
 include CMakeFiles/clean-generated.dir/progress.make
 
 CMakeFiles/clean-generated:
-	/usr/bin/cmake -P /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/cmake/clean-generated.cmake
+	/usr/bin/cmake -P /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/cmake/clean-generated.cmake
 
 clean-generated: CMakeFiles/clean-generated
 clean-generated: CMakeFiles/clean-generated.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean-generated.dir/clean:
 .PHONY : CMakeFiles/clean-generated.dir/clean
 
 CMakeFiles/clean-generated.dir/depend:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/clean-generated.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/clean-generated.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean-generated.dir/depend
 

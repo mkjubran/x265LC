@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/input/input.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/input/input.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/input/y4m.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/input/y4m.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/input/yuv.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/input/yuv.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/output/output.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/output/output.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/output/raw.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/output/raw.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/output/reconplay.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/output/reconplay.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/output/y4m.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/output/y4m.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/output/yuv.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/output/yuv.cpp.o"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/x265.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/cli.dir/x265.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/input/input.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/input/input.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/input/y4m.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/input/y4m.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/input/yuv.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/input/yuv.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/output/output.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/output/output.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/output/raw.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/output/raw.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/output/reconplay.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/output/reconplay.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/output/y4m.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/output/y4m.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/output/yuv.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/output/yuv.cpp.o"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/x265.cpp" "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/cli.dir/x265.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -31,15 +31,15 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/."
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common"
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/encoder"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/."
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/encoder"
   "."
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles/x265-static.dir/DependInfo.cmake"
+  "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles/x265-static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

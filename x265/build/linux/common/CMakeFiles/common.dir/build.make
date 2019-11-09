@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source
+CMAKE_SOURCE_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux
+CMAKE_BINARY_DIR = /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux
 
 # Include any dependencies generated for this target.
 include common/CMakeFiles/common.dir/depend.make
@@ -58,9 +58,9 @@ include common/CMakeFiles/common.dir/progress.make
 include common/CMakeFiles/common.dir/flags.make
 
 common/CMakeFiles/common.dir/x86/pixel-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/pixel-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixel-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixel-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixel-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixel-a.asm
+common/CMakeFiles/common.dir/x86/pixel-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixel-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixel-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixel-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixel-a.asm
 
 common/CMakeFiles/common.dir/x86/pixel-a.asm.o.requires:
 
@@ -74,9 +74,9 @@ common/CMakeFiles/common.dir/x86/pixel-a.asm.o.provides.build: common/CMakeFiles
 
 
 common/CMakeFiles/common.dir/x86/const-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/const-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/const-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/const-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/const-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/const-a.asm
+common/CMakeFiles/common.dir/x86/const-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/const-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/const-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/const-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/const-a.asm
 
 common/CMakeFiles/common.dir/x86/const-a.asm.o.requires:
 
@@ -90,9 +90,9 @@ common/CMakeFiles/common.dir/x86/const-a.asm.o.provides.build: common/CMakeFiles
 
 
 common/CMakeFiles/common.dir/x86/cpu-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/cpu-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/cpu-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/cpu-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/cpu-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/cpu-a.asm
+common/CMakeFiles/common.dir/x86/cpu-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/cpu-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/cpu-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/cpu-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/cpu-a.asm
 
 common/CMakeFiles/common.dir/x86/cpu-a.asm.o.requires:
 
@@ -106,9 +106,9 @@ common/CMakeFiles/common.dir/x86/cpu-a.asm.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/x86/ssd-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/ssd-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/ssd-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/ssd-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/ssd-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/ssd-a.asm
+common/CMakeFiles/common.dir/x86/ssd-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/ssd-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/ssd-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/ssd-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/ssd-a.asm
 
 common/CMakeFiles/common.dir/x86/ssd-a.asm.o.requires:
 
@@ -122,9 +122,9 @@ common/CMakeFiles/common.dir/x86/ssd-a.asm.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/x86/mc-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/mc-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/mc-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/mc-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/mc-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/mc-a.asm
+common/CMakeFiles/common.dir/x86/mc-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/mc-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/mc-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/mc-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/mc-a.asm
 
 common/CMakeFiles/common.dir/x86/mc-a.asm.o.requires:
 
@@ -138,9 +138,9 @@ common/CMakeFiles/common.dir/x86/mc-a.asm.o.provides.build: common/CMakeFiles/co
 
 
 common/CMakeFiles/common.dir/x86/mc-a2.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/mc-a2.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/mc-a2.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/mc-a2.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/mc-a2.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/mc-a2.asm
+common/CMakeFiles/common.dir/x86/mc-a2.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/mc-a2.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/mc-a2.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/mc-a2.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/mc-a2.asm
 
 common/CMakeFiles/common.dir/x86/mc-a2.asm.o.requires:
 
@@ -154,9 +154,9 @@ common/CMakeFiles/common.dir/x86/mc-a2.asm.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/x86/pixel-util8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/pixel-util8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixel-util8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixel-util8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixel-util8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixel-util8.asm
+common/CMakeFiles/common.dir/x86/pixel-util8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixel-util8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixel-util8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixel-util8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixel-util8.asm
 
 common/CMakeFiles/common.dir/x86/pixel-util8.asm.o.requires:
 
@@ -170,9 +170,9 @@ common/CMakeFiles/common.dir/x86/pixel-util8.asm.o.provides.build: common/CMakeF
 
 
 common/CMakeFiles/common.dir/x86/blockcopy8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/blockcopy8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/blockcopy8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/blockcopy8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/blockcopy8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/blockcopy8.asm
+common/CMakeFiles/common.dir/x86/blockcopy8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/blockcopy8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/blockcopy8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/blockcopy8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/blockcopy8.asm
 
 common/CMakeFiles/common.dir/x86/blockcopy8.asm.o.requires:
 
@@ -186,9 +186,9 @@ common/CMakeFiles/common.dir/x86/blockcopy8.asm.o.provides.build: common/CMakeFi
 
 
 common/CMakeFiles/common.dir/x86/pixeladd8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/pixeladd8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixeladd8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixeladd8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixeladd8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/pixeladd8.asm
+common/CMakeFiles/common.dir/x86/pixeladd8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixeladd8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/pixeladd8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/pixeladd8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/pixeladd8.asm
 
 common/CMakeFiles/common.dir/x86/pixeladd8.asm.o.requires:
 
@@ -202,9 +202,9 @@ common/CMakeFiles/common.dir/x86/pixeladd8.asm.o.provides.build: common/CMakeFil
 
 
 common/CMakeFiles/common.dir/x86/dct8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/dct8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/dct8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/dct8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/dct8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/dct8.asm
+common/CMakeFiles/common.dir/x86/dct8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/dct8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/dct8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/dct8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/dct8.asm
 
 common/CMakeFiles/common.dir/x86/dct8.asm.o.requires:
 
@@ -218,9 +218,9 @@ common/CMakeFiles/common.dir/x86/dct8.asm.o.provides.build: common/CMakeFiles/co
 
 
 common/CMakeFiles/common.dir/x86/seaintegral.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/seaintegral.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/seaintegral.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/seaintegral.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/seaintegral.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/seaintegral.asm
+common/CMakeFiles/common.dir/x86/seaintegral.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/seaintegral.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/seaintegral.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/seaintegral.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/seaintegral.asm
 
 common/CMakeFiles/common.dir/x86/seaintegral.asm.o.requires:
 
@@ -234,9 +234,9 @@ common/CMakeFiles/common.dir/x86/seaintegral.asm.o.provides.build: common/CMakeF
 
 
 common/CMakeFiles/common.dir/x86/sad-a.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/sad-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/sad-a.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/sad-a.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/sad-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/sad-a.asm
+common/CMakeFiles/common.dir/x86/sad-a.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/sad-a.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/sad-a.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/sad-a.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/sad-a.asm
 
 common/CMakeFiles/common.dir/x86/sad-a.asm.o.requires:
 
@@ -250,9 +250,9 @@ common/CMakeFiles/common.dir/x86/sad-a.asm.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/x86/intrapred8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/intrapred8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/intrapred8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/intrapred8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/intrapred8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/intrapred8.asm
+common/CMakeFiles/common.dir/x86/intrapred8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/intrapred8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/intrapred8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/intrapred8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/intrapred8.asm
 
 common/CMakeFiles/common.dir/x86/intrapred8.asm.o.requires:
 
@@ -266,9 +266,9 @@ common/CMakeFiles/common.dir/x86/intrapred8.asm.o.provides.build: common/CMakeFi
 
 
 common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/intrapred8_allangs.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/intrapred8_allangs.asm
+common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/intrapred8_allangs.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/intrapred8_allangs.asm
 
 common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o.requires:
 
@@ -282,9 +282,9 @@ common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.o.provides.build: common
 
 
 common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/v4-ipfilter8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/v4-ipfilter8.asm
+common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/v4-ipfilter8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/v4-ipfilter8.asm
 
 common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o.requires:
 
@@ -298,9 +298,9 @@ common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.o.provides.build: common/CMake
 
 
 common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/h-ipfilter8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/h-ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/h-ipfilter8.asm
+common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/h-ipfilter8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/h-ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/h-ipfilter8.asm
 
 common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o.requires:
 
@@ -314,9 +314,9 @@ common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.o.provides.build: common/CMakeF
 
 
 common/CMakeFiles/common.dir/x86/ipfilter8.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/ipfilter8.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/ipfilter8.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/ipfilter8.asm
+common/CMakeFiles/common.dir/x86/ipfilter8.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/ipfilter8.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/ipfilter8.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/ipfilter8.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/ipfilter8.asm
 
 common/CMakeFiles/common.dir/x86/ipfilter8.asm.o.requires:
 
@@ -330,9 +330,9 @@ common/CMakeFiles/common.dir/x86/ipfilter8.asm.o.provides.build: common/CMakeFil
 
 
 common/CMakeFiles/common.dir/x86/loopfilter.asm.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/loopfilter.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/loopfilter.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/loopfilter.asm.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/loopfilter.asm.o /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/loopfilter.asm
+common/CMakeFiles/common.dir/x86/loopfilter.asm.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/loopfilter.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM_NASM object common/CMakeFiles/common.dir/x86/loopfilter.asm.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /root/bin/nasm -f elf64 -DARCH_X86_64=1 -I /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/../common/x86/ -DPIC -DHAVE_ALIGNED_STACK=1 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DX265_NS=x265   -o CMakeFiles/common.dir/x86/loopfilter.asm.o /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/loopfilter.asm
 
 common/CMakeFiles/common.dir/x86/loopfilter.asm.o.requires:
 
@@ -346,17 +346,17 @@ common/CMakeFiles/common.dir/x86/loopfilter.asm.o.provides.build: common/CMakeFi
 
 
 common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/asm-primitives.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/x86/asm-primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/asm-primitives.cpp
+common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/asm-primitives.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/x86/asm-primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/asm-primitives.cpp
 
 common/CMakeFiles/common.dir/x86/asm-primitives.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/x86/asm-primitives.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/asm-primitives.cpp > CMakeFiles/common.dir/x86/asm-primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/asm-primitives.cpp > CMakeFiles/common.dir/x86/asm-primitives.cpp.i
 
 common/CMakeFiles/common.dir/x86/asm-primitives.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/x86/asm-primitives.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/x86/asm-primitives.cpp -o CMakeFiles/common.dir/x86/asm-primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/x86/asm-primitives.cpp -o CMakeFiles/common.dir/x86/asm-primitives.cpp.s
 
 common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o.requires:
 
@@ -370,17 +370,17 @@ common/CMakeFiles/common.dir/x86/asm-primitives.cpp.o.provides.build: common/CMa
 
 
 common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/vec-primitives.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/vec/vec-primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/vec-primitives.cpp
+common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/vec-primitives.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/vec/vec-primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/vec-primitives.cpp
 
 common/CMakeFiles/common.dir/vec/vec-primitives.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/vec/vec-primitives.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/vec-primitives.cpp > CMakeFiles/common.dir/vec/vec-primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/vec-primitives.cpp > CMakeFiles/common.dir/vec/vec-primitives.cpp.i
 
 common/CMakeFiles/common.dir/vec/vec-primitives.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/vec/vec-primitives.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/vec-primitives.cpp -o CMakeFiles/common.dir/vec/vec-primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/vec-primitives.cpp -o CMakeFiles/common.dir/vec/vec-primitives.cpp.s
 
 common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o.requires:
 
@@ -394,17 +394,17 @@ common/CMakeFiles/common.dir/vec/vec-primitives.cpp.o.provides.build: common/CMa
 
 
 common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -o CMakeFiles/common.dir/vec/dct-sse3.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse3.cpp
+common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -o CMakeFiles/common.dir/vec/dct-sse3.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse3.cpp
 
 common/CMakeFiles/common.dir/vec/dct-sse3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/vec/dct-sse3.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse3.cpp > CMakeFiles/common.dir/vec/dct-sse3.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse3.cpp > CMakeFiles/common.dir/vec/dct-sse3.cpp.i
 
 common/CMakeFiles/common.dir/vec/dct-sse3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/vec/dct-sse3.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse3.cpp -o CMakeFiles/common.dir/vec/dct-sse3.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse3 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse3.cpp -o CMakeFiles/common.dir/vec/dct-sse3.cpp.s
 
 common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o.requires:
 
@@ -418,17 +418,17 @@ common/CMakeFiles/common.dir/vec/dct-sse3.cpp.o.provides.build: common/CMakeFile
 
 
 common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-ssse3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -o CMakeFiles/common.dir/vec/dct-ssse3.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-ssse3.cpp
+common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-ssse3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -o CMakeFiles/common.dir/vec/dct-ssse3.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-ssse3.cpp
 
 common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/vec/dct-ssse3.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-ssse3.cpp > CMakeFiles/common.dir/vec/dct-ssse3.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-ssse3.cpp > CMakeFiles/common.dir/vec/dct-ssse3.cpp.i
 
 common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/vec/dct-ssse3.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-ssse3.cpp -o CMakeFiles/common.dir/vec/dct-ssse3.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -mssse3 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-ssse3.cpp -o CMakeFiles/common.dir/vec/dct-ssse3.cpp.s
 
 common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o.requires:
 
@@ -442,17 +442,17 @@ common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.o.provides.build: common/CMakeFil
 
 
 common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse41.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -o CMakeFiles/common.dir/vec/dct-sse41.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse41.cpp
+common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse41.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -o CMakeFiles/common.dir/vec/dct-sse41.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse41.cpp
 
 common/CMakeFiles/common.dir/vec/dct-sse41.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/vec/dct-sse41.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse41.cpp > CMakeFiles/common.dir/vec/dct-sse41.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse41.cpp > CMakeFiles/common.dir/vec/dct-sse41.cpp.i
 
 common/CMakeFiles/common.dir/vec/dct-sse41.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/vec/dct-sse41.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/vec/dct-sse41.cpp -o CMakeFiles/common.dir/vec/dct-sse41.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-unused-parameter -msse4.1 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/vec/dct-sse41.cpp -o CMakeFiles/common.dir/vec/dct-sse41.cpp.s
 
 common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o.requires:
 
@@ -466,17 +466,17 @@ common/CMakeFiles/common.dir/vec/dct-sse41.cpp.o.provides.build: common/CMakeFil
 
 
 common/CMakeFiles/common.dir/primitives.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/primitives.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object common/CMakeFiles/common.dir/primitives.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/primitives.cpp
+common/CMakeFiles/common.dir/primitives.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/primitives.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object common/CMakeFiles/common.dir/primitives.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/primitives.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/primitives.cpp
 
 common/CMakeFiles/common.dir/primitives.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/primitives.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/primitives.cpp > CMakeFiles/common.dir/primitives.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/primitives.cpp > CMakeFiles/common.dir/primitives.cpp.i
 
 common/CMakeFiles/common.dir/primitives.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/primitives.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/primitives.cpp -o CMakeFiles/common.dir/primitives.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/primitives.cpp -o CMakeFiles/common.dir/primitives.cpp.s
 
 common/CMakeFiles/common.dir/primitives.cpp.o.requires:
 
@@ -490,17 +490,17 @@ common/CMakeFiles/common.dir/primitives.cpp.o.provides.build: common/CMakeFiles/
 
 
 common/CMakeFiles/common.dir/pixel.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/pixel.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/pixel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object common/CMakeFiles/common.dir/pixel.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/pixel.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/pixel.cpp
+common/CMakeFiles/common.dir/pixel.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/pixel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object common/CMakeFiles/common.dir/pixel.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/pixel.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/pixel.cpp
 
 common/CMakeFiles/common.dir/pixel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/pixel.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/pixel.cpp > CMakeFiles/common.dir/pixel.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/pixel.cpp > CMakeFiles/common.dir/pixel.cpp.i
 
 common/CMakeFiles/common.dir/pixel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/pixel.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/pixel.cpp -o CMakeFiles/common.dir/pixel.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/pixel.cpp -o CMakeFiles/common.dir/pixel.cpp.s
 
 common/CMakeFiles/common.dir/pixel.cpp.o.requires:
 
@@ -514,17 +514,17 @@ common/CMakeFiles/common.dir/pixel.cpp.o.provides.build: common/CMakeFiles/commo
 
 
 common/CMakeFiles/common.dir/dct.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/dct.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/dct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object common/CMakeFiles/common.dir/dct.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/dct.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/dct.cpp
+common/CMakeFiles/common.dir/dct.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/dct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object common/CMakeFiles/common.dir/dct.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/dct.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/dct.cpp
 
 common/CMakeFiles/common.dir/dct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/dct.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/dct.cpp > CMakeFiles/common.dir/dct.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/dct.cpp > CMakeFiles/common.dir/dct.cpp.i
 
 common/CMakeFiles/common.dir/dct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/dct.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/dct.cpp -o CMakeFiles/common.dir/dct.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/dct.cpp -o CMakeFiles/common.dir/dct.cpp.s
 
 common/CMakeFiles/common.dir/dct.cpp.o.requires:
 
@@ -538,17 +538,17 @@ common/CMakeFiles/common.dir/dct.cpp.o.provides.build: common/CMakeFiles/common.
 
 
 common/CMakeFiles/common.dir/lowpassdct.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/lowpassdct.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowpassdct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object common/CMakeFiles/common.dir/lowpassdct.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/lowpassdct.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowpassdct.cpp
+common/CMakeFiles/common.dir/lowpassdct.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowpassdct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object common/CMakeFiles/common.dir/lowpassdct.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/lowpassdct.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowpassdct.cpp
 
 common/CMakeFiles/common.dir/lowpassdct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/lowpassdct.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowpassdct.cpp > CMakeFiles/common.dir/lowpassdct.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowpassdct.cpp > CMakeFiles/common.dir/lowpassdct.cpp.i
 
 common/CMakeFiles/common.dir/lowpassdct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/lowpassdct.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowpassdct.cpp -o CMakeFiles/common.dir/lowpassdct.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowpassdct.cpp -o CMakeFiles/common.dir/lowpassdct.cpp.s
 
 common/CMakeFiles/common.dir/lowpassdct.cpp.o.requires:
 
@@ -562,17 +562,17 @@ common/CMakeFiles/common.dir/lowpassdct.cpp.o.provides.build: common/CMakeFiles/
 
 
 common/CMakeFiles/common.dir/ipfilter.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/ipfilter.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/ipfilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object common/CMakeFiles/common.dir/ipfilter.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/ipfilter.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/ipfilter.cpp
+common/CMakeFiles/common.dir/ipfilter.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/ipfilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object common/CMakeFiles/common.dir/ipfilter.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/ipfilter.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/ipfilter.cpp
 
 common/CMakeFiles/common.dir/ipfilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/ipfilter.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/ipfilter.cpp > CMakeFiles/common.dir/ipfilter.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/ipfilter.cpp > CMakeFiles/common.dir/ipfilter.cpp.i
 
 common/CMakeFiles/common.dir/ipfilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/ipfilter.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/ipfilter.cpp -o CMakeFiles/common.dir/ipfilter.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/ipfilter.cpp -o CMakeFiles/common.dir/ipfilter.cpp.s
 
 common/CMakeFiles/common.dir/ipfilter.cpp.o.requires:
 
@@ -586,17 +586,17 @@ common/CMakeFiles/common.dir/ipfilter.cpp.o.provides.build: common/CMakeFiles/co
 
 
 common/CMakeFiles/common.dir/intrapred.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/intrapred.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/intrapred.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object common/CMakeFiles/common.dir/intrapred.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/intrapred.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/intrapred.cpp
+common/CMakeFiles/common.dir/intrapred.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/intrapred.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object common/CMakeFiles/common.dir/intrapred.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/intrapred.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/intrapred.cpp
 
 common/CMakeFiles/common.dir/intrapred.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/intrapred.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/intrapred.cpp > CMakeFiles/common.dir/intrapred.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/intrapred.cpp > CMakeFiles/common.dir/intrapred.cpp.i
 
 common/CMakeFiles/common.dir/intrapred.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/intrapred.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/intrapred.cpp -o CMakeFiles/common.dir/intrapred.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/intrapred.cpp -o CMakeFiles/common.dir/intrapred.cpp.s
 
 common/CMakeFiles/common.dir/intrapred.cpp.o.requires:
 
@@ -610,17 +610,17 @@ common/CMakeFiles/common.dir/intrapred.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/loopfilter.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/loopfilter.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/loopfilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object common/CMakeFiles/common.dir/loopfilter.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/loopfilter.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/loopfilter.cpp
+common/CMakeFiles/common.dir/loopfilter.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/loopfilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object common/CMakeFiles/common.dir/loopfilter.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/loopfilter.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/loopfilter.cpp
 
 common/CMakeFiles/common.dir/loopfilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/loopfilter.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/loopfilter.cpp > CMakeFiles/common.dir/loopfilter.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/loopfilter.cpp > CMakeFiles/common.dir/loopfilter.cpp.i
 
 common/CMakeFiles/common.dir/loopfilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/loopfilter.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/loopfilter.cpp -o CMakeFiles/common.dir/loopfilter.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/loopfilter.cpp -o CMakeFiles/common.dir/loopfilter.cpp.s
 
 common/CMakeFiles/common.dir/loopfilter.cpp.o.requires:
 
@@ -634,17 +634,17 @@ common/CMakeFiles/common.dir/loopfilter.cpp.o.provides.build: common/CMakeFiles/
 
 
 common/CMakeFiles/common.dir/constants.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/constants.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/constants.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object common/CMakeFiles/common.dir/constants.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/constants.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/constants.cpp
+common/CMakeFiles/common.dir/constants.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/constants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object common/CMakeFiles/common.dir/constants.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/constants.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/constants.cpp
 
 common/CMakeFiles/common.dir/constants.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/constants.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/constants.cpp > CMakeFiles/common.dir/constants.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/constants.cpp > CMakeFiles/common.dir/constants.cpp.i
 
 common/CMakeFiles/common.dir/constants.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/constants.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/constants.cpp -o CMakeFiles/common.dir/constants.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/constants.cpp -o CMakeFiles/common.dir/constants.cpp.s
 
 common/CMakeFiles/common.dir/constants.cpp.o.requires:
 
@@ -658,17 +658,17 @@ common/CMakeFiles/common.dir/constants.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/cpu.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/cpu.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cpu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object common/CMakeFiles/common.dir/cpu.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -o CMakeFiles/common.dir/cpu.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cpu.cpp
+common/CMakeFiles/common.dir/cpu.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cpu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object common/CMakeFiles/common.dir/cpu.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -o CMakeFiles/common.dir/cpu.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cpu.cpp
 
 common/CMakeFiles/common.dir/cpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/cpu.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cpu.cpp > CMakeFiles/common.dir/cpu.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cpu.cpp > CMakeFiles/common.dir/cpu.cpp.i
 
 common/CMakeFiles/common.dir/cpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/cpu.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cpu.cpp -o CMakeFiles/common.dir/cpu.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-narrowing -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cpu.cpp -o CMakeFiles/common.dir/cpu.cpp.s
 
 common/CMakeFiles/common.dir/cpu.cpp.o.requires:
 
@@ -682,17 +682,17 @@ common/CMakeFiles/common.dir/cpu.cpp.o.provides.build: common/CMakeFiles/common.
 
 
 common/CMakeFiles/common.dir/version.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/version.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/version.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object common/CMakeFiles/common.dir/version.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/version.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/version.cpp
+common/CMakeFiles/common.dir/version.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/version.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object common/CMakeFiles/common.dir/version.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/version.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/version.cpp
 
 common/CMakeFiles/common.dir/version.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/version.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/version.cpp > CMakeFiles/common.dir/version.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/version.cpp > CMakeFiles/common.dir/version.cpp.i
 
 common/CMakeFiles/common.dir/version.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/version.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/version.cpp -o CMakeFiles/common.dir/version.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DX265_VERSION=3.1+19-c4b098f973e6 -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/version.cpp -o CMakeFiles/common.dir/version.cpp.s
 
 common/CMakeFiles/common.dir/version.cpp.o.requires:
 
@@ -706,17 +706,17 @@ common/CMakeFiles/common.dir/version.cpp.o.provides.build: common/CMakeFiles/com
 
 
 common/CMakeFiles/common.dir/threading.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/threading.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threading.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object common/CMakeFiles/common.dir/threading.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/threading.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threading.cpp
+common/CMakeFiles/common.dir/threading.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threading.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object common/CMakeFiles/common.dir/threading.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -o CMakeFiles/common.dir/threading.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threading.cpp
 
 common/CMakeFiles/common.dir/threading.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/threading.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threading.cpp > CMakeFiles/common.dir/threading.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threading.cpp > CMakeFiles/common.dir/threading.cpp.i
 
 common/CMakeFiles/common.dir/threading.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/threading.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threading.cpp -o CMakeFiles/common.dir/threading.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DENABLE_ASSEMBLY=1 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threading.cpp -o CMakeFiles/common.dir/threading.cpp.s
 
 common/CMakeFiles/common.dir/threading.cpp.o.requires:
 
@@ -730,17 +730,17 @@ common/CMakeFiles/common.dir/threading.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/threadpool.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/threadpool.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threadpool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object common/CMakeFiles/common.dir/threadpool.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/threadpool.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threadpool.cpp
+common/CMakeFiles/common.dir/threadpool.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threadpool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object common/CMakeFiles/common.dir/threadpool.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/threadpool.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threadpool.cpp
 
 common/CMakeFiles/common.dir/threadpool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/threadpool.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threadpool.cpp > CMakeFiles/common.dir/threadpool.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threadpool.cpp > CMakeFiles/common.dir/threadpool.cpp.i
 
 common/CMakeFiles/common.dir/threadpool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/threadpool.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/threadpool.cpp -o CMakeFiles/common.dir/threadpool.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/threadpool.cpp -o CMakeFiles/common.dir/threadpool.cpp.s
 
 common/CMakeFiles/common.dir/threadpool.cpp.o.requires:
 
@@ -754,17 +754,17 @@ common/CMakeFiles/common.dir/threadpool.cpp.o.provides.build: common/CMakeFiles/
 
 
 common/CMakeFiles/common.dir/wavefront.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/wavefront.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/wavefront.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object common/CMakeFiles/common.dir/wavefront.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/wavefront.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/wavefront.cpp
+common/CMakeFiles/common.dir/wavefront.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/wavefront.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object common/CMakeFiles/common.dir/wavefront.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/wavefront.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/wavefront.cpp
 
 common/CMakeFiles/common.dir/wavefront.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/wavefront.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/wavefront.cpp > CMakeFiles/common.dir/wavefront.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/wavefront.cpp > CMakeFiles/common.dir/wavefront.cpp.i
 
 common/CMakeFiles/common.dir/wavefront.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/wavefront.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/wavefront.cpp -o CMakeFiles/common.dir/wavefront.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/wavefront.cpp -o CMakeFiles/common.dir/wavefront.cpp.s
 
 common/CMakeFiles/common.dir/wavefront.cpp.o.requires:
 
@@ -778,17 +778,17 @@ common/CMakeFiles/common.dir/wavefront.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/md5.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/md5.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/md5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object common/CMakeFiles/common.dir/md5.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/md5.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/md5.cpp
+common/CMakeFiles/common.dir/md5.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/md5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object common/CMakeFiles/common.dir/md5.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/md5.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/md5.cpp
 
 common/CMakeFiles/common.dir/md5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/md5.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/md5.cpp > CMakeFiles/common.dir/md5.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/md5.cpp > CMakeFiles/common.dir/md5.cpp.i
 
 common/CMakeFiles/common.dir/md5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/md5.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/md5.cpp -o CMakeFiles/common.dir/md5.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/md5.cpp -o CMakeFiles/common.dir/md5.cpp.s
 
 common/CMakeFiles/common.dir/md5.cpp.o.requires:
 
@@ -802,17 +802,17 @@ common/CMakeFiles/common.dir/md5.cpp.o.provides.build: common/CMakeFiles/common.
 
 
 common/CMakeFiles/common.dir/bitstream.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/bitstream.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/bitstream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object common/CMakeFiles/common.dir/bitstream.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/bitstream.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/bitstream.cpp
+common/CMakeFiles/common.dir/bitstream.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/bitstream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object common/CMakeFiles/common.dir/bitstream.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/bitstream.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/bitstream.cpp
 
 common/CMakeFiles/common.dir/bitstream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/bitstream.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/bitstream.cpp > CMakeFiles/common.dir/bitstream.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/bitstream.cpp > CMakeFiles/common.dir/bitstream.cpp.i
 
 common/CMakeFiles/common.dir/bitstream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/bitstream.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/bitstream.cpp -o CMakeFiles/common.dir/bitstream.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/bitstream.cpp -o CMakeFiles/common.dir/bitstream.cpp.s
 
 common/CMakeFiles/common.dir/bitstream.cpp.o.requires:
 
@@ -826,17 +826,17 @@ common/CMakeFiles/common.dir/bitstream.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/yuv.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/yuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/yuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object common/CMakeFiles/common.dir/yuv.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/yuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/yuv.cpp
+common/CMakeFiles/common.dir/yuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/yuv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object common/CMakeFiles/common.dir/yuv.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/yuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/yuv.cpp
 
 common/CMakeFiles/common.dir/yuv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/yuv.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/yuv.cpp > CMakeFiles/common.dir/yuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/yuv.cpp > CMakeFiles/common.dir/yuv.cpp.i
 
 common/CMakeFiles/common.dir/yuv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/yuv.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/yuv.cpp -o CMakeFiles/common.dir/yuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/yuv.cpp -o CMakeFiles/common.dir/yuv.cpp.s
 
 common/CMakeFiles/common.dir/yuv.cpp.o.requires:
 
@@ -850,17 +850,17 @@ common/CMakeFiles/common.dir/yuv.cpp.o.provides.build: common/CMakeFiles/common.
 
 
 common/CMakeFiles/common.dir/shortyuv.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/shortyuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/shortyuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object common/CMakeFiles/common.dir/shortyuv.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/shortyuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/shortyuv.cpp
+common/CMakeFiles/common.dir/shortyuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/shortyuv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object common/CMakeFiles/common.dir/shortyuv.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/shortyuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/shortyuv.cpp
 
 common/CMakeFiles/common.dir/shortyuv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/shortyuv.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/shortyuv.cpp > CMakeFiles/common.dir/shortyuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/shortyuv.cpp > CMakeFiles/common.dir/shortyuv.cpp.i
 
 common/CMakeFiles/common.dir/shortyuv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/shortyuv.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/shortyuv.cpp -o CMakeFiles/common.dir/shortyuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/shortyuv.cpp -o CMakeFiles/common.dir/shortyuv.cpp.s
 
 common/CMakeFiles/common.dir/shortyuv.cpp.o.requires:
 
@@ -874,17 +874,17 @@ common/CMakeFiles/common.dir/shortyuv.cpp.o.provides.build: common/CMakeFiles/co
 
 
 common/CMakeFiles/common.dir/picyuv.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/picyuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/picyuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object common/CMakeFiles/common.dir/picyuv.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/picyuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/picyuv.cpp
+common/CMakeFiles/common.dir/picyuv.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/picyuv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object common/CMakeFiles/common.dir/picyuv.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/picyuv.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/picyuv.cpp
 
 common/CMakeFiles/common.dir/picyuv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/picyuv.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/picyuv.cpp > CMakeFiles/common.dir/picyuv.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/picyuv.cpp > CMakeFiles/common.dir/picyuv.cpp.i
 
 common/CMakeFiles/common.dir/picyuv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/picyuv.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/picyuv.cpp -o CMakeFiles/common.dir/picyuv.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/picyuv.cpp -o CMakeFiles/common.dir/picyuv.cpp.s
 
 common/CMakeFiles/common.dir/picyuv.cpp.o.requires:
 
@@ -898,17 +898,17 @@ common/CMakeFiles/common.dir/picyuv.cpp.o.provides.build: common/CMakeFiles/comm
 
 
 common/CMakeFiles/common.dir/common.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/common.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object common/CMakeFiles/common.dir/common.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/common.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/common.cpp
+common/CMakeFiles/common.dir/common.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object common/CMakeFiles/common.dir/common.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/common.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/common.cpp
 
 common/CMakeFiles/common.dir/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/common.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/common.cpp > CMakeFiles/common.dir/common.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/common.cpp > CMakeFiles/common.dir/common.cpp.i
 
 common/CMakeFiles/common.dir/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/common.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/common.cpp -o CMakeFiles/common.dir/common.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/common.cpp -o CMakeFiles/common.dir/common.cpp.s
 
 common/CMakeFiles/common.dir/common.cpp.o.requires:
 
@@ -922,17 +922,17 @@ common/CMakeFiles/common.dir/common.cpp.o.provides.build: common/CMakeFiles/comm
 
 
 common/CMakeFiles/common.dir/param.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/param.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/param.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object common/CMakeFiles/common.dir/param.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -o CMakeFiles/common.dir/param.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/param.cpp
+common/CMakeFiles/common.dir/param.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/param.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object common/CMakeFiles/common.dir/param.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -o CMakeFiles/common.dir/param.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/param.cpp
 
 common/CMakeFiles/common.dir/param.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/param.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/param.cpp > CMakeFiles/common.dir/param.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/param.cpp > CMakeFiles/common.dir/param.cpp.i
 
 common/CMakeFiles/common.dir/param.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/param.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/param.cpp -o CMakeFiles/common.dir/param.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DHAVE_STRTOK_R=1 -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/param.cpp -o CMakeFiles/common.dir/param.cpp.s
 
 common/CMakeFiles/common.dir/param.cpp.o.requires:
 
@@ -946,17 +946,17 @@ common/CMakeFiles/common.dir/param.cpp.o.provides.build: common/CMakeFiles/commo
 
 
 common/CMakeFiles/common.dir/frame.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/frame.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/frame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object common/CMakeFiles/common.dir/frame.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/frame.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/frame.cpp
+common/CMakeFiles/common.dir/frame.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/frame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object common/CMakeFiles/common.dir/frame.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/frame.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/frame.cpp
 
 common/CMakeFiles/common.dir/frame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/frame.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/frame.cpp > CMakeFiles/common.dir/frame.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/frame.cpp > CMakeFiles/common.dir/frame.cpp.i
 
 common/CMakeFiles/common.dir/frame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/frame.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/frame.cpp -o CMakeFiles/common.dir/frame.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/frame.cpp -o CMakeFiles/common.dir/frame.cpp.s
 
 common/CMakeFiles/common.dir/frame.cpp.o.requires:
 
@@ -970,17 +970,17 @@ common/CMakeFiles/common.dir/frame.cpp.o.provides.build: common/CMakeFiles/commo
 
 
 common/CMakeFiles/common.dir/framedata.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/framedata.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/framedata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object common/CMakeFiles/common.dir/framedata.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/framedata.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/framedata.cpp
+common/CMakeFiles/common.dir/framedata.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/framedata.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object common/CMakeFiles/common.dir/framedata.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/framedata.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/framedata.cpp
 
 common/CMakeFiles/common.dir/framedata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/framedata.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/framedata.cpp > CMakeFiles/common.dir/framedata.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/framedata.cpp > CMakeFiles/common.dir/framedata.cpp.i
 
 common/CMakeFiles/common.dir/framedata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/framedata.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/framedata.cpp -o CMakeFiles/common.dir/framedata.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/framedata.cpp -o CMakeFiles/common.dir/framedata.cpp.s
 
 common/CMakeFiles/common.dir/framedata.cpp.o.requires:
 
@@ -994,17 +994,17 @@ common/CMakeFiles/common.dir/framedata.cpp.o.provides.build: common/CMakeFiles/c
 
 
 common/CMakeFiles/common.dir/cudata.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/cudata.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cudata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object common/CMakeFiles/common.dir/cudata.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/cudata.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cudata.cpp
+common/CMakeFiles/common.dir/cudata.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cudata.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object common/CMakeFiles/common.dir/cudata.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/cudata.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cudata.cpp
 
 common/CMakeFiles/common.dir/cudata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/cudata.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cudata.cpp > CMakeFiles/common.dir/cudata.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cudata.cpp > CMakeFiles/common.dir/cudata.cpp.i
 
 common/CMakeFiles/common.dir/cudata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/cudata.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/cudata.cpp -o CMakeFiles/common.dir/cudata.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/cudata.cpp -o CMakeFiles/common.dir/cudata.cpp.s
 
 common/CMakeFiles/common.dir/cudata.cpp.o.requires:
 
@@ -1018,17 +1018,17 @@ common/CMakeFiles/common.dir/cudata.cpp.o.provides.build: common/CMakeFiles/comm
 
 
 common/CMakeFiles/common.dir/slice.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/slice.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/slice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object common/CMakeFiles/common.dir/slice.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/slice.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/slice.cpp
+common/CMakeFiles/common.dir/slice.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/slice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object common/CMakeFiles/common.dir/slice.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/slice.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/slice.cpp
 
 common/CMakeFiles/common.dir/slice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/slice.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/slice.cpp > CMakeFiles/common.dir/slice.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/slice.cpp > CMakeFiles/common.dir/slice.cpp.i
 
 common/CMakeFiles/common.dir/slice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/slice.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/slice.cpp -o CMakeFiles/common.dir/slice.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/slice.cpp -o CMakeFiles/common.dir/slice.cpp.s
 
 common/CMakeFiles/common.dir/slice.cpp.o.requires:
 
@@ -1042,17 +1042,17 @@ common/CMakeFiles/common.dir/slice.cpp.o.provides.build: common/CMakeFiles/commo
 
 
 common/CMakeFiles/common.dir/lowres.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/lowres.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object common/CMakeFiles/common.dir/lowres.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/lowres.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowres.cpp
+common/CMakeFiles/common.dir/lowres.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowres.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object common/CMakeFiles/common.dir/lowres.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/lowres.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowres.cpp
 
 common/CMakeFiles/common.dir/lowres.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/lowres.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowres.cpp > CMakeFiles/common.dir/lowres.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowres.cpp > CMakeFiles/common.dir/lowres.cpp.i
 
 common/CMakeFiles/common.dir/lowres.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/lowres.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/lowres.cpp -o CMakeFiles/common.dir/lowres.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/lowres.cpp -o CMakeFiles/common.dir/lowres.cpp.s
 
 common/CMakeFiles/common.dir/lowres.cpp.o.requires:
 
@@ -1066,17 +1066,17 @@ common/CMakeFiles/common.dir/lowres.cpp.o.provides.build: common/CMakeFiles/comm
 
 
 common/CMakeFiles/common.dir/piclist.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/piclist.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/piclist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object common/CMakeFiles/common.dir/piclist.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/piclist.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/piclist.cpp
+common/CMakeFiles/common.dir/piclist.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/piclist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object common/CMakeFiles/common.dir/piclist.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/piclist.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/piclist.cpp
 
 common/CMakeFiles/common.dir/piclist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/piclist.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/piclist.cpp > CMakeFiles/common.dir/piclist.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/piclist.cpp > CMakeFiles/common.dir/piclist.cpp.i
 
 common/CMakeFiles/common.dir/piclist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/piclist.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/piclist.cpp -o CMakeFiles/common.dir/piclist.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/piclist.cpp -o CMakeFiles/common.dir/piclist.cpp.s
 
 common/CMakeFiles/common.dir/piclist.cpp.o.requires:
 
@@ -1090,17 +1090,17 @@ common/CMakeFiles/common.dir/piclist.cpp.o.provides.build: common/CMakeFiles/com
 
 
 common/CMakeFiles/common.dir/predict.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/predict.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/predict.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object common/CMakeFiles/common.dir/predict.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/predict.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/predict.cpp
+common/CMakeFiles/common.dir/predict.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/predict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object common/CMakeFiles/common.dir/predict.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/predict.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/predict.cpp
 
 common/CMakeFiles/common.dir/predict.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/predict.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/predict.cpp > CMakeFiles/common.dir/predict.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/predict.cpp > CMakeFiles/common.dir/predict.cpp.i
 
 common/CMakeFiles/common.dir/predict.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/predict.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/predict.cpp -o CMakeFiles/common.dir/predict.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/predict.cpp -o CMakeFiles/common.dir/predict.cpp.s
 
 common/CMakeFiles/common.dir/predict.cpp.o.requires:
 
@@ -1114,17 +1114,17 @@ common/CMakeFiles/common.dir/predict.cpp.o.provides.build: common/CMakeFiles/com
 
 
 common/CMakeFiles/common.dir/scalinglist.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/scalinglist.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/scalinglist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object common/CMakeFiles/common.dir/scalinglist.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/scalinglist.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/scalinglist.cpp
+common/CMakeFiles/common.dir/scalinglist.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/scalinglist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object common/CMakeFiles/common.dir/scalinglist.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/scalinglist.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/scalinglist.cpp
 
 common/CMakeFiles/common.dir/scalinglist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/scalinglist.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/scalinglist.cpp > CMakeFiles/common.dir/scalinglist.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/scalinglist.cpp > CMakeFiles/common.dir/scalinglist.cpp.i
 
 common/CMakeFiles/common.dir/scalinglist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/scalinglist.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/scalinglist.cpp -o CMakeFiles/common.dir/scalinglist.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/scalinglist.cpp -o CMakeFiles/common.dir/scalinglist.cpp.s
 
 common/CMakeFiles/common.dir/scalinglist.cpp.o.requires:
 
@@ -1138,17 +1138,17 @@ common/CMakeFiles/common.dir/scalinglist.cpp.o.provides.build: common/CMakeFiles
 
 
 common/CMakeFiles/common.dir/quant.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/quant.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/quant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object common/CMakeFiles/common.dir/quant.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/quant.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/quant.cpp
+common/CMakeFiles/common.dir/quant.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/quant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object common/CMakeFiles/common.dir/quant.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/quant.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/quant.cpp
 
 common/CMakeFiles/common.dir/quant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/quant.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/quant.cpp > CMakeFiles/common.dir/quant.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/quant.cpp > CMakeFiles/common.dir/quant.cpp.i
 
 common/CMakeFiles/common.dir/quant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/quant.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/quant.cpp -o CMakeFiles/common.dir/quant.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/quant.cpp -o CMakeFiles/common.dir/quant.cpp.s
 
 common/CMakeFiles/common.dir/quant.cpp.o.requires:
 
@@ -1162,17 +1162,17 @@ common/CMakeFiles/common.dir/quant.cpp.o.provides.build: common/CMakeFiles/commo
 
 
 common/CMakeFiles/common.dir/deblock.cpp.o: common/CMakeFiles/common.dir/flags.make
-common/CMakeFiles/common.dir/deblock.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/deblock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object common/CMakeFiles/common.dir/deblock.cpp.o"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/deblock.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/deblock.cpp
+common/CMakeFiles/common.dir/deblock.cpp.o: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/deblock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object common/CMakeFiles/common.dir/deblock.cpp.o"
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/deblock.cpp.o -c /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/deblock.cpp
 
 common/CMakeFiles/common.dir/deblock.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/deblock.cpp.i"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/deblock.cpp > CMakeFiles/common.dir/deblock.cpp.i
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/deblock.cpp > CMakeFiles/common.dir/deblock.cpp.i
 
 common/CMakeFiles/common.dir/deblock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/deblock.cpp.s"
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common/deblock.cpp -o CMakeFiles/common.dir/deblock.cpp.s
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common/deblock.cpp -o CMakeFiles/common.dir/deblock.cpp.s
 
 common/CMakeFiles/common.dir/deblock.cpp.o.requires:
 
@@ -1304,10 +1304,10 @@ common/CMakeFiles/common.dir/requires: common/CMakeFiles/common.dir/deblock.cpp.
 .PHONY : common/CMakeFiles/common.dir/requires
 
 common/CMakeFiles/common.dir/clean:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean.cmake
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean.cmake
 .PHONY : common/CMakeFiles/common.dir/clean
 
 common/CMakeFiles/common.dir/depend:
-	cd /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/common/CMakeFiles/common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/common/CMakeFiles/common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : common/CMakeFiles/common.dir/depend
 

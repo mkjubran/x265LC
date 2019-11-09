@@ -1,4 +1,4 @@
-# Install script for directory: /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/encoder
+# Install script for directory: /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/encoder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

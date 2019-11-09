@@ -2268,6 +2268,7 @@ void Encoder::finishFrameStats(Frame* curFrame, FrameEncoder *curEncoder, x265_f
     if (!IS_REFERENCED(curFrame))
         c += 32; // lower case if unreferenced
 
+
     if (frameStats)
     {
         const int picOrderCntLSB = slice->m_poc - slice->m_lastIDR;
@@ -2303,36 +2304,40 @@ void Encoder::finishFrameStats(Frame* curFrame, FrameEncoder *curEncoder, x265_f
             }
         }
 
+
+
        // start editing jubran
        //x265_log(m_param, X265_LOG_INFO, "POC: %d, bits: %d\n", frameStats->poc,frameStats->bits);
        FILE * pFile;
-       if (frameStats->poc>0)
-         {
+       //if (frameStats->poc>0)
+       //  {
          pFile = fopen ("x265LC_InfoPerFrame.txt","a");
-         }
-       else
-         {
-         pFile = fopen ("x265LC_InfoPerFrame.txt","w");
-         }
+       //  }
+       //else
+       //  {
+       //  pFile = fopen ("x265LC_InfoPerFrame.txt","w");
+       //  }
        //fprintf (pFile, "Name");
        char c = (slice->isIntra() ? 'I' : slice->isInterP() ? 'P' : 'B');
-       fprintf(pFile,"%4d %c %10d", frameStats->poc,c,frameStats->bits );
+       //c= frameStats->poc  + " " + c + " " + frameStats->bits  + " [L0";
+       //fprintf(pFile,"%c", c);
 
-       fprintf(pFile," [L0 ");
+       fprintf(pFile,"%4d %c %10d [L0 ", frameStats->poc,c,frameStats->bits);
        for (int ref = 0; ref < 16; ref++)
          {
+        // c = c + " " + std::to_string(frameStats->list0POC[ref])
          fprintf (pFile, "%d ", frameStats->list0POC[ref]);
          }
-       fprintf(pFile,"L0]");
-      
-       fprintf(pFile," [L1 ");
+       fprintf(pFile,"L0] [L1 ");
+       //c = c + " L0] [L1";
        for (int ref = 0; ref < 16; ref++)
          {
          fprintf (pFile, "%d ", frameStats->list1POC[ref]);
+         //c = c + " " + std::to_string(frameStats->list1POC[ref])
          }
-       fprintf(pFile,"L1]");
-
-       fprintf(pFile,"\n");
+       fprintf(pFile,"L1]\n");
+       //c = c + " L1]";
+       //fprintf(pFile,"%c\n",c);
        fclose (pFile);
   // end of edit
 

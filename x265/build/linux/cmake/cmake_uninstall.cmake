@@ -1,8 +1,8 @@
-if(NOT EXISTS "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: '/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/install_manifest.txt'")
+if(NOT EXISTS "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: '/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/install_manifest.txt'")
 endif()
 
-file(READ "/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux/install_manifest.txt" files)
+file(READ "/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

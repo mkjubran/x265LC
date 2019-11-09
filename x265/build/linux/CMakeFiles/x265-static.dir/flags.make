@@ -7,11 +7,11 @@ ASM_NASM_FLAGS =   -Wall -Wextra -Wshadow -std=gnu++98 -fPIC -Wno-array-bounds -
 
 ASM_NASM_DEFINES = -DEXPORT_C_API=1 -DHAVE_INT_TYPES_H=1 -DHAVE_LIBNUMA -DHIGH_BIT_DEPTH=0 -DX265_ARCH_X86=1 -DX265_DEPTH=8 -DX265_NS=x265 -DX86_64=1 -D__STDC_LIMIT_MACROS=1
 
-ASM_NASM_INCLUDES = /usr/include /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/. /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/encoder /data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux 
+ASM_NASM_INCLUDES = /usr/include /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/. /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/encoder /data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux 
 
 CXX_FLAGS = -O3 -DNDEBUG   -Wall -Wextra -Wshadow -std=gnu++98 -fPIC -Wno-array-bounds -ffast-math -mstackrealign -fno-exceptions
 
 CXX_DEFINES = -DEXPORT_C_API=1 -DHAVE_INT_TYPES_H=1 -DHAVE_LIBNUMA -DHIGH_BIT_DEPTH=0 -DX265_ARCH_X86=1 -DX265_DEPTH=8 -DX265_NS=x265 -DX86_64=1 -D__STDC_LIMIT_MACROS=1
 
-CXX_INCLUDES = -I/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/. -I/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/common -I/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/source/encoder -I/data1/Mohd_All/LearnableCoding/FFMPEGLC/x265/build/linux 
+CXX_INCLUDES = -I/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/. -I/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/common -I/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/source/encoder -I/data1/Mohd_All/LearnableCoding/FFMPEG_x265LC/x265LC/x265/build/linux 
 
