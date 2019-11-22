@@ -133,6 +133,7 @@ for filename in os.listdir(input_dir):
          cmd = 'rm -rf x265LC_InfoPerFrame.txt'; output = call(cmd)
 
          try:
+         #if (1 == 1):
            # Make x and x_e; modify encoding as necessary ..  (e.g., adjust CRF/B-frames/etc)
            #cmd = 'ffmpeg -i {}/{} -crf 25 tmp_e.mp4'.format(input_dir, filename)
            if ( nrps == 0 ):
@@ -171,7 +172,7 @@ for filename in os.listdir(input_dir):
            frame_skip = 10
            for i in range(0, len(frame_type), frame_skip):
              #print('{}   {}\n'.format(i,frame_type));
-             fo = '{}_{}_{}.png'.format(format(frame_size[i], '05d'), format(int(Frame[i]),'05d'), filename[:-4])
+             fo = '{}_{}_{}.png'.format(format(frame_size[i], '010d'), format(int(Frame[i]),'05d'), filename[:-4])
              if frame_type[i] != 'I':
                 # Note: i+1 because ffmpeg frame indices START FROM 1
                 #fo = '{}_{}_{}.png'.format(format(frame_size[i], '05d'), format(int(Frame[i]),'05d'), filename[:-4])
@@ -197,6 +198,7 @@ for filename in os.listdir(input_dir):
 
            cmd = 'mv {}/{} {}_tmp/{}'.format(input_dir,filename,input_dir,filename)
            out = call(cmd)
+         #else:
          except:
            cmd = 'mv {}/{} {}_corrupted/{}'.format(input_dir,filename,input_dir,filename)
            out = call(cmd)

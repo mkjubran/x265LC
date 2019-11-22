@@ -1,8 +1,9 @@
+# python make_video_training_profile_wrps_v3.py --in_dir=./mp4s --out_dir=./test  --override=yes --nrps=0 --crf=30 --gop=4 --w=640 --h=480
+
 import os, sys, subprocess
 import pdb
 import re
 import argparse
-import numpy as np
 
 
 # Instantiate the parser
@@ -34,6 +35,12 @@ parser.add_argument('--in_dir', type=str,
 parser.add_argument('--override', type=str,
                     help='Override training data [y/Y or n/N]')
 
+parser.add_argument('--w', type=int,
+                    help='Original Width')
+
+parser.add_argument('--h', type=int,
+                    help='Original Hight')
+
 args = parser.parse_args()
 
 gop_length=args.gop;
@@ -42,11 +49,8 @@ crf=args.crf;
 input_dir=args.in_dir;
 out_dir=args.out_dir;
 override=args.override;
-FrameStitching=20
-
-# load size of frames from stitching
-x=np.load('./tmp_HMS/toptr2s6r_640480_Rate_PSNR_ORB_{}.npy'.format(FrameStitching));
-size=np.true_divide(x[:,1], 8)
+width=args.w;
+hight=args.h;
 
 # Code for pre processing:
 # ffmpeg -i sintel.mp4  -crf 16 -bf 0 sintel_2.mp4
@@ -138,8 +142,8 @@ for filename in os.listdir(input_dir):
 
          cmd = 'rm -rf x265LC_InfoPerFrame.txt'; output = call(cmd)
 
-         #try:
-         if ( 1 == 1 ):
+         try:
+         #if (1 == 1):
            # Make x and x_e; modify encoding as necessary ..  (e.g., adjust CRF/B-frames/etc)
            #cmd = 'ffmpeg -i {}/{} -crf 25 tmp_e.mp4'.format(input_dir, filename)
            if ( nrps == 0 ):
@@ -151,6 +155,13 @@ for filename in os.listdir(input_dir):
 
            cmd = 'ffmpeg -i {}/{}  tmp/%5d.png'.format(input_dir, filename)
            output = call(cmd)
+
+           cmd = 'identify -format "%[fx:w]x%[fx:h]" ./tmp/00001.png'
+           Res = call(cmd); W=int(Res.split('x')[0]);H=int(Res.split('x')[1]);
+           #print('{}x{}'.format(W,H))
+           if not ((W == width) and (H == hight)):
+                raise ValueError('Resolution of {} is {}x{}'.format(filename,W,H));
+
 
            cmd = 'ffmpeg -i tmp_e.mp4 tmp_e/%5d.png'
            output = call(cmd)
@@ -171,13 +182,15 @@ for filename in os.listdir(input_dir):
            frame_predictors=L0_predictors;
 
            #pdb.set_trace()
+
            #Output preprocessed model inputs
            print('Output for {}'.format(filename))
            # for i in range(len(frame_type)):
-           for i in range(1, len(size)):
+           frame_skip = 10
+           for i in range(0, len(frame_type), frame_skip):
              #print('{}   {}\n'.format(i,frame_type));
-             fo = '{}_{}_SF{}_{}.png'.format(format(int(size[i]), '05d'), format(int(Frame[i]),'05d'), FrameStitching,filename[:-4])
-             if frame_type[i] != 'G':
+             fo = '{}_{}_{}.png'.format(format(frame_size[i], '010d'), format(int(Frame[i]),'05d'), filename[:-4])
+             if frame_type[i] != 'I':
                 # Note: i+1 because ffmpeg frame indices START FROM 1
                 #fo = '{}_{}_{}.png'.format(format(frame_size[i], '05d'), format(int(Frame[i]),'05d'), filename[:-4])
                 if ( nrps == 4):
@@ -190,7 +203,7 @@ for filename in os.listdir(input_dir):
                   output = call(cmd)
                 elif ( nrps == 1 ):
                   #-- nrps=1
-                  cmd = 'montage tmp/{}.png tmp_e/{}.png tmp_e/{}.png  -tile 3x1 -font DejaVu-Sans -geometry +0+0 PNG24:{}/{}'.format(format(int(Frame[i]),'05d'), format(int(Frame[i]),'05d'), format(int(FrameStitching),'05d'),out_dir,fo)
+                  cmd = 'montage tmp/{}.png tmp_e/{}.png tmp_e/{}.png  -tile 3x1 -font DejaVu-Sans -geometry +0+0 PNG24:{}/{}'.format(format(int(Frame[i]),'05d'), format(int(Frame[i]),'05d'), format(int(frame_predictors[i][0]),'05d'),out_dir,fo)
                   output = call(cmd)
                 else:
                   print('No montage command for nrps={}'.format(nrps))
@@ -200,11 +213,12 @@ for filename in os.listdir(input_dir):
              else:
                print('Frame type is {} and no montage command for nrps={}'.format(frame_type[i],nrps))
 
-#           cmd = 'mv {}/{} {}_tmp/{}'.format(input_dir,filename,input_dir,filename)
-#           out = call(cmd)
-#         except:
-#           cmd = 'mv {}/{} {}_corrupted/{}'.format(input_dir,filename,input_dir,filename)
-#           out = call(cmd)
+           cmd = 'mv {}/{} {}_tmp/{}'.format(input_dir,filename,input_dir,filename)
+           out = call(cmd)
+         #else:
+         except:
+           cmd = 'mv {}/{} {}_corrupted/{}'.format(input_dir,filename,input_dir,filename)
+           out = call(cmd)
     else:
         continue
 
